@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 Розклад</title>
+<style>
+  :root {
+    --accent: #3182ce;
+    --accent-dark: #2b6cb0;
+    --bg: #f0f4f8;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #1a202c;
+    --muted: #718096;
+    --numerator: #3182ce;
+    --denominator: #d69e2e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 14px 40px;
+  }
+  header {
+    text-align: center;
+    padding: 18px 10px 14px;
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 22px;
+  }
+  header .sub {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .badge {
+    display: inline-block;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .badge.numerator { color: var(--numerator); background: #ebf8ff; }
+  .badge.denominator { color: var(--denominator); background: #fffff0; }
+
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 6px;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  .field {
+    margin-bottom: 12px;
+  }
+  .field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  select, input[type="date"] {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 15px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 10px;
+  }
+  .lesson-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .lesson-row:last-child { border-bottom: none; }
+  .lesson-no {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #ebf8ff;
+    color: var(--accent);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .lesson-info { flex: 1; min-width: 0; }
+  .lesson-subject {
+    font-weight: 600;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+  .lesson-time {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .lesson-conducted {
+    font-size: 16px;
+  }
+
+  .day-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 18px 0 8px;
+    padding-left: 2px;
+  }
+  .day-heading .d-name {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .day-heading .d-date {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 30px 10px;
+    font-size: 14px;
+  }
+
+  .updated {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📚 Розклад</h1>
+    <div class="sub" id="todayLine">Завантаження…</div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" data-mode="day">Розклад на день</div>
+    <div class="tab" data-mode="full">Загальний розклад</div>
+  </div>
+
+  <div class="field">
+    <label>Група</label>
+    <select id="groupSelect"></select>
+  </div>
+
+  <div class="field" id="dateField">
+    <label>Дата</label>
+    <input type="date" id="dateInput">
+  </div>
+
+  <div id="content"></div>
+
+  <div class="updated" id="updatedLine"></div>
+</div>
+
+<script>
+let SCHEDULE = null;
+let mode = "day";
+
+const DAY_NAMES = ["Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота","Неділя"];
+
+function fmtDate(iso) {
+  const [y,m,d] = iso.split("-");
+  return `${d}.${m}.${y}`;
+}
+
+function weekBadge(label, type) {
+  const cls = type === "numerator" ? "numerator" : "denominator";
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+async function load() {
+  const res = await fetch("schedule.json?_=" + Date.now());
+  SCHEDULE = await res.json();
+
+  document.getElementById("todayLine").innerHTML =
+    `${fmtDate(SCHEDULE.today)} · ${weekBadge(SCHEDULE.today_week_label, SCHEDULE.today_week_type)}`;
+
+  const genDate = new Date(SCHEDULE.generated_at);
+  document.getElementById("updatedLine").textContent =
+    "Оновлено: " + genDate.toLocaleString("uk-UA");
+
+  const groupSelect = document.getElementById("groupSelect");
+  groupSelect.innerHTML = SCHEDULE.groups
+    .map(g => `<option value="${g}">${g}</option>`)
+    .join("");
+
+  const dateInput = document.getElementById("dateInput");
+  dateInput.value = SCHEDULE.today;
+
+  groupSelect.addEventListener("change", render);
+  dateInput.addEventListener("change", render);
+
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      mode = tab.dataset.mode;
+      document.getElementById("dateField").style.display =
+        mode === "day" ? "block" : "none";
+      render();
+    });
+  });
+
+  render();
+}
+
+function lessonRow(item) {
+  const mark = item.conducted ? '<span class="lesson-conducted">✅</span>' : "";
+  return `
+    <div class="lesson-row">
+      <div class="lesson-no">${item.lesson}</div>
+      <div class="lesson-info">
+        <div class="lesson-subject">${item.subject}</div>
+        <div class="lesson-time">${item.time || ""}</div>
+      </div>
+      ${mark}
+    </div>`;
+}
+
+function render() {
+  const content = document.getElementById("content");
+  const group = document.getElementById("groupSelect").value;
+
+  if (!group) {
+    content.innerHTML = '<div class="empty">Немає груп у розкладі</div>';
+    return;
+  }
+
+  if (mode === "day") {
+    const dateVal = document.getElementById("dateInput").value;
+    const items = SCHEDULE.lessons
+      .filter(l => l.group === group && l.date === dateVal)
+      .sort((a,b) => a.lesson - b.lesson);
+
+    if (items.length === 0) {
+      content.innerHTML = '<div class="empty">Немає занять цього дня</div>';
+      return;
+    }
+
+    const weekInfo = weekBadge(items[0].week_type_label, items[0].week_type);
+    content.innerHTML = `
+      <div class="day-heading">
+        <span class="d-name">${items[0].weekday}</span>
+        <span class="d-date">${fmtDate(dateVal)} · ${weekInfo}</span>
+      </div>
+      <div class="card">
+        ${items.map(lessonRow).join("")}
+      </div>`;
+  } else {
+    const items = SCHEDULE.lessons
+      .filter(l => l.group === group)
+      .sort((a,b) => (a.date + "-" + a.lesson).localeCompare(b.date + "-" + b.lesson));
+
+    if (items.length === 0) {
+      content.innerHTML = '<div class="empty">Розклад для цієї групи ще не згенеровано</div>';
+      return;
+    }
+
+    let html = "";
+    const byDate = {};
+    const order = [];
+    for (const item of items) {
+      if (!byDate[item.date]) { byDate[item.date] = []; order.push(item.date); }
+      byDate[item.date].push(item);
+    }
+    for (const d of order) {
+      const dayItems = byDate[d];
+      html += `
+        <div class="day-heading">
+          <span class="d-name">${dayItems[0].weekday}</span>
+          <span class="d-date">${fmtDate(d)} · ${weekBadge(dayItems[0].week_type_label, dayItems[0].week_type)}</span>
+        </div>
+        <div class="card">
+          ${dayItems.sort((a,b)=>a.lesson-b.lesson).map(lessonRow).join("")}
+        </div>`;
+    }
+
+    content.innerHTML = html;
+  }
+}
+
+load().catch(err => {
+  document.getElementById("content").innerHTML =
+    '<div class="empty">Не вдалося завантажити schedule.json</div>';
+  console.error(err);
+});
+</script>
+</body>
+</html>
