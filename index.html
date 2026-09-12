@@ -1,377 +1,379 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📚 Розклад</title>
-<style>
-  :root {
-    --accent: #3182ce;
-    --bg: #f0f4f8;
-    --surface: #ffffff;
-    --border: #e2e8f0;
-    --text: #1a202c;
-    --muted: #718096;
-    --numerator: #3182ce;
-    --denominator: #d69e2e;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-  }
-  .wrap {
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 14px 12px 40px;
-  }
-  header {
-    text-align: center;
-    padding: 14px 10px 12px;
-  }
-  header h1 {
-    margin: 0 0 4px;
-    font-size: 22px;
-  }
-  header .sub {
-    font-size: 13px;
-    color: var(--muted);
-  }
-  .badge {
-    display: inline-block;
-    font-weight: 800;
-    padding: 2px 8px;
-    border-radius: 8px;
-    font-size: 12px;
-  }
-  .badge.numerator { color: var(--numerator); background: #ebf8ff; }
-  .badge.denominator { color: var(--denominator); background: #fffff0; }
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>📚 Розклад</title>
+        <style>
+          :root {
+          --accent: #3182ce;
+          --bg: #f0f4f8;
+          --surface: #ffffff;
+          --border: #e2e8f0;
+          --text: #1a202c;
+          --muted: #718096;
+          --numerator: #3182ce;
+          --denominator: #d69e2e;
+          }
+          * { box-sizing: border-box; }
+          body {
+          margin: 0;
+          font-family: "Segoe UI", Arial, sans-serif;
+          background: var(--bg);
+          color: var(--text);
+          }
+          .wrap {
+          max-width: 520px;
+          margin: 0 auto;
+          padding: 14px 12px 40px;
+          }
+          header {
+          text-align: center;
+          padding: 14px 10px 12px;
+          }
+          header h1 {
+          margin: 0 0 4px;
+          font-size: 22px;
+          }
+          header .sub {
+          font-size: 13px;
+          color: var(--muted);
+          }
+          .badge {
+          display: inline-block;
+          font-weight: 800;
+          padding: 2px 8px;
+          border-radius: 8px;
+          font-size: 12px;
+          }
+          .badge.numerator { color: var(--numerator); background: #ebf8ff; }
+          .badge.denominator { color: var(--denominator); background: #fffff0; }
 
-  .tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-  .tab {
-    flex: 1;
-    text-align: center;
-    padding: 12px 6px;
-    border-radius: 12px;
-    border: 2px solid var(--border);
-    background: var(--surface);
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    user-select: none;
-  }
-  .tab.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-  }
+          .tabs {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 14px;
+          }
+          .tab {
+          flex: 1;
+          text-align: center;
+          padding: 12px 6px;
+          border-radius: 12px;
+          border: 2px solid var(--border);
+          background: var(--surface);
+          font-weight: 600;
+          font-size: 14px;
+          cursor: pointer;
+          user-select: none;
+          }
+          .tab.active {
+          background: var(--accent);
+          border-color: var(--accent);
+          color: #fff;
+          }
 
-  .nav-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-  .nav-btn {
-    flex-shrink: 0;
-    min-height: 44px;
-    min-width: 44px;
-    border-radius: 10px;
-    border: 2px solid var(--border);
-    background: var(--surface);
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    cursor: pointer;
-  }
-  .nav-label {
-    flex: 1;
-    text-align: center;
-    background: var(--surface);
-    border: 2px solid var(--border);
-    border-radius: 10px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 0 6px;
-  }
-  .today-btn {
-    flex-shrink: 0;
-    min-height: 44px;
-    padding: 0 12px;
-    border-radius: 10px;
-    border: 2px solid var(--accent);
-    background: var(--accent);
-    color: #fff;
-    font-weight: 700;
-    font-size: 13px;
-    cursor: pointer;
-  }
+          .nav-bar {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 14px;
+          }
+          .nav-btn {
+          flex-shrink: 0;
+          min-height: 44px;
+          min-width: 44px;
+          border-radius: 10px;
+          border: 2px solid var(--border);
+          background: var(--surface);
+          font-size: 16px;
+          font-weight: 700;
+          color: var(--text);
+          cursor: pointer;
+          }
+          .nav-label {
+          flex: 1;
+          text-align: center;
+          background: var(--surface);
+          border: 2px solid var(--border);
+          border-radius: 10px;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 0 6px;
+          }
+          .today-btn {
+          flex-shrink: 0;
+          min-height: 44px;
+          padding: 0 12px;
+          border-radius: 10px;
+          border: 2px solid var(--accent);
+          background: var(--accent);
+          color: #fff;
+          font-weight: 700;
+          font-size: 13px;
+          cursor: pointer;
+          }
 
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 14px;
-    margin-bottom: 10px;
-  }
-  .lesson-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .lesson-row:last-child { border-bottom: none; }
-  .lesson-no {
-    min-width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    background: #ebf8ff;
-    color: var(--accent);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .lesson-info { flex: 1; min-width: 0; }
-  .lesson-subject {
-    font-weight: 600;
-    font-size: 15px;
-    overflow-wrap: anywhere;
-  }
-  .lesson-group {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--accent);
-    background: #ebf8ff;
-    border-radius: 6px;
-    padding: 1px 6px;
-    margin-bottom: 2px;
-  }
-  .lesson-time {
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .lesson-conducted {
-    font-size: 16px;
-  }
+          .card {
+          background: var(--surface);
+          border: 1px solid var(--border);
+          border-radius: 14px;
+          padding: 14px;
+          margin-bottom: 10px;
+          }
+          .lesson-row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 10px 0;
+          border-bottom: 1px solid var(--border);
+          }
+          .lesson-row:last-child { border-bottom: none; }
+          .lesson-no {
+          min-width: 34px;
+          height: 34px;
+          border-radius: 10px;
+          background: #ebf8ff;
+          color: var(--accent);
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          }
+          .lesson-info { flex: 1; min-width: 0; }
+          .lesson-subject {
+          font-weight: 600;
+          font-size: 15px;
+          overflow-wrap: anywhere;
+          }
+          .lesson-group {
+          display: inline-block;
+          font-size: 11px;
+          font-weight: 700;
+          color: var(--accent);
+          background: #ebf8ff;
+          border-radius: 6px;
+          padding: 1px 6px;
+          margin-bottom: 2px;
+          }
+          .lesson-time {
+          font-size: 12px;
+          color: var(--muted);
+          }
+          .lesson-conducted {
+          font-size: 16px;
+          }
 
-  .day-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 18px 0 8px;
-    padding-left: 2px;
-  }
-  .day-heading:first-child { margin-top: 4px; }
-  .day-heading .d-name {
-    font-weight: 700;
-    font-size: 15px;
-  }
-  .day-heading .d-date {
-    font-size: 12px;
-    color: var(--muted);
-  }
+          .day-heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          margin: 18px 0 8px;
+          padding-left: 2px;
+          }
+          .day-heading:first-child { margin-top: 4px; }
+          .day-heading .d-name {
+          font-weight: 700;
+          font-size: 15px;
+          }
+          .day-heading .d-date {
+          font-size: 12px;
+          color: var(--muted);
+          }
 
-  .empty {
-    text-align: center;
-    color: var(--muted);
-    padding: 30px 10px;
-    font-size: 14px;
-  }
+          .empty {
+          text-align: center;
+          color: var(--muted);
+          padding: 30px 10px;
+          font-size: 14px;
+          }
 
-  .updated {
-    text-align: center;
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 24px;
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <h1>📚 Розклад</h1>
-    <div class="sub" id="todayLine">Завантаження…</div>
-  </header>
+          .updated {
+          text-align: center;
+          font-size: 11px;
+          color: var(--muted);
+          margin-top: 24px;
+          }
+        </style>
+      </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>📚 Розклад</h1>
+        <div class="sub" id="todayLine">Завантаження…</div>
+      </header>
 
-  <div class="tabs">
-    <div class="tab active" data-mode="week">Тиждень</div>
-    <div class="tab" data-mode="day">День</div>
-  </div>
+      <div class="tabs">
+        <div class="tab active" data-mode="week">Тиждень</div>
+        <div class="tab" data-mode="day">День</div>
+      </div>
 
-  <div class="nav-bar">
-    <button class="nav-btn" id="prevBtn">‹</button>
-    <div class="nav-label" id="navLabel"></div>
-    <button class="nav-btn" id="nextBtn">›</button>
-  </div>
-  <button class="today-btn" id="todayBtn" style="width:100%; margin-bottom:14px;">📌 Сьогодні</button>
+      <div class="nav-bar">
+        <button class="nav-btn" id="prevBtn">‹</button>
+        <div class="nav-label" id="navLabel"></div>
+        <button class="nav-btn" id="nextBtn">›</button>
+      </div>
+      <button class="today-btn" id="todayBtn" style="width:100%; margin-bottom:14px;">📌 Сьогодні</button>
 
-  <div id="content"></div>
+      <div id="content"></div>
 
-  <div class="updated" id="updatedLine"></div>
-</div>
+      <div class="updated" id="updatedLine"></div>
+    </div>
 
-<script>
-let SCHEDULE = null;
-let mode = "week";       // "week" | "day"
-let currentDate = null;  // Date object — вибраний день (для режиму "день")
-let currentWeekStart = null; // Date object — понеділок обраного тижня
+    <script>
+      let SCHEDULE = null;
+      let mode = "week";       // "week" | "day"
+      let currentDate = null;  // Date object — вибраний день (для режиму "день")
+      let currentWeekStart = null; // Date object — понеділок обраного тижня
 
-function parseISO(iso) {
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Date(y, m - 1, d);
-}
-function toISO(d) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
-function fmtDateShort(d) {
-  return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}`;
-}
-function fmtDateFull(d) {
-  return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`;
-}
-function getMonday(d) {
-  const day = d.getDay(); // 0=нд,1=пн,...6=сб
-  const diff = (day === 0 ? -6 : 1) - day;
-  const res = new Date(d);
-  res.setDate(d.getDate() + diff);
-  return res;
-}
-function addDays(d, n) {
-  const res = new Date(d);
-  res.setDate(d.getDate() + n);
-  return res;
-}
+      function parseISO(iso) {
+      const [y, m, d] = iso.split("-").map(Number);
+      return new Date(y, m - 1, d);
+      }
+      function toISO(d) {
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${y}-${m}-${day}`;
+      }
+      function fmtDateShort(d) {
+      return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}`;
+      }
+      function fmtDateFull(d) {
+      return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`;
+      }
+      function getMonday(d) {
+      const day = d.getDay(); // 0=нд,1=пн,...6=сб
+      const diff = (day === 0 ? -6 : 1) - day;
+      const res = new Date(d);
+      res.setDate(d.getDate() + diff);
+      return res;
+      }
+      function addDays(d, n) {
+      const res = new Date(d);
+      res.setDate(d.getDate() + n);
+      return res;
+      }
 
-function weekBadge(label, type) {
-  if (!label) return "";
-  const cls = type === "numerator" ? "numerator" : "denominator";
-  return `<span class="badge ${cls}">${label}</span>`;
-}
+      function weekBadge(label, type) {
+      if (!label) return "";
+      const cls = type === "numerator" ? "numerator" : "denominator";
+      return `<span class="badge ${cls}">${label}</span>`;
+      }
 
-async function load() {
-  const res = await fetch("schedule.json?_=" + Date.now());
-  SCHEDULE = await res.json();
+      async function load() {
+      const res = await fetch("schedule.json?_=" + Date.now());
+      SCHEDULE = await res.json();
 
-  document.getElementById("todayLine").innerHTML =
-    `Сьогодні ${fmtDateFull(parseISO(SCHEDULE.today))} · ${weekBadge(SCHEDULE.today_week_label, SCHEDULE.today_week_type)}`;
+      document.getElementById("todayLine").innerHTML =
+      `Сьогодні ${fmtDateFull(parseISO(SCHEDULE.today))} · ${weekBadge(SCHEDULE.today_week_label, SCHEDULE.today_week_type)}`;
 
-  const genDate = new Date(SCHEDULE.generated_at);
-  document.getElementById("updatedLine").textContent =
-    "Оновлено: " + genDate.toLocaleString("uk-UA");
+      const genDate = new Date(SCHEDULE.generated_at);
+      document.getElementById("updatedLine").textContent =
+      "Оновлено: " + genDate.toLocaleString("uk-UA");
 
-  currentDate = parseISO(SCHEDULE.today);
-  currentWeekStart = getMonday(currentDate);
+      currentDate = parseISO(SCHEDULE.today);
+      currentWeekStart = getMonday(currentDate);
 
-  document.querySelectorAll(".tab").forEach(tab => {
-    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(tab => {
+      tab.addEventListener("click", () => {
       document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
       tab.classList.add("active");
       mode = tab.dataset.mode;
       render();
-    });
-  });
+      });
+      });
 
-  document.getElementById("prevBtn").addEventListener("click", () => step(-1));
-  document.getElementById("nextBtn").addEventListener("click", () => step(1));
-  document.getElementById("todayBtn").addEventListener("click", () => {
-    currentDate = parseISO(SCHEDULE.today);
-    currentWeekStart = getMonday(currentDate);
-    render();
-  });
+      document.getElementById("prevBtn").addEventListener("click", () => step(-1));
+      document.getElementById("nextBtn").addEventListener("click", () => step(1));
+      document.getElementById("todayBtn").addEventListener("click", () => {
+      currentDate = parseISO(SCHEDULE.today);
+      currentWeekStart = getMonday(currentDate);
+      render();
+      });
 
-  render();
-}
+      render();
+      }
 
-function step(dir) {
-  if (mode === "day") {
-    currentDate = addDays(currentDate, dir);
-  } else {
-    currentWeekStart = addDays(currentWeekStart, dir * 7);
-  }
-  render();
-}
+      function step(dir) {
+      if (mode === "day") {
+      currentDate = addDays(currentDate, dir);
+      } else {
+      currentWeekStart = addDays(currentWeekStart, dir * 7);
+      }
+      render();
+      }
 
-function lessonRow(item, showGroup) {
-  const mark = item.conducted ? '<span class="lesson-conducted">✅</span>' : "";
-  const groupTag = showGroup ? `<div><span class="lesson-group">${item.group}</span></div>` : "";
-  return `
-    <div class="lesson-row">
-      <div class="lesson-no">${item.lesson}</div>
-      <div class="lesson-info">
-        ${groupTag}
-        <div class="lesson-subject">${item.subject}</div>
-        <div class="lesson-time">${item.time || ""}</div>
-      </div>
-      ${mark}
-    </div>`;
-}
+      function lessonRow(item, showGroup) {
+      const mark = item.conducted ? '<span class="lesson-conducted">✅</span>' : "";
+      const groupTag = showGroup ? `<div>
+        <span class="lesson-group">${item.group}</span>
+      </div>` : "";
+      return `
+      <div class="lesson-row">
+        <div class="lesson-no">${item.lesson}</div>
+        <div class="lesson-info">
+          ${groupTag}
+          <div class="lesson-subject">${item.subject}</div>
+          <div class="lesson-time">${item.time || ""}</div>
+        </div>
+        ${mark}
+      </div>`;
+      }
 
-function render() {
-  const content = document.getElementById("content");
-  const navLabel = document.getElementById("navLabel");
+      function render() {
+      const content = document.getElementById("content");
+      const navLabel = document.getElementById("navLabel");
 
-  if (mode === "day") {
-    const iso = toISO(currentDate);
-    const weekdayIdx = (currentDate.getDay() + 6) % 7; // 0=пн
-    const items = SCHEDULE.lessons
+      if (mode === "day") {
+      const iso = toISO(currentDate);
+      const weekdayIdx = (currentDate.getDay() + 6) % 7; // 0=пн
+      const items = SCHEDULE.lessons
       .filter(l => l.date === iso)
       .sort((a, b) => a.lesson - b.lesson);
 
-    const label = items.length
+      const label = items.length
       ? weekBadge(items[0].week_type_label, items[0].week_type)
       : "";
-    navLabel.innerHTML = `${fmtDateFull(currentDate)} ${label}`;
+      navLabel.innerHTML = `${fmtDateFull(currentDate)} ${label}`;
 
-    if (weekdayIdx > 5) {
+      if (weekdayIdx > 5) {
       content.innerHTML = '<div class="empty">Неділя — занять немає</div>';
       return;
-    }
+      }
 
-    if (items.length === 0) {
+      if (items.length === 0) {
       content.innerHTML = '<div class="empty">Немає занять цього дня</div>';
       return;
-    }
+      }
 
-    content.innerHTML = `<div class="card">${items.map(i => lessonRow(i, true)).join("")}</div>`;
-  } else {
-    const weekStart = currentWeekStart;
-    const weekEnd = addDays(weekStart, 5);
-    const weekItems = SCHEDULE.lessons.filter(l => {
+      content.innerHTML = `<div class="card">${items.map(i => lessonRow(i, true)).join("")}</div>`;
+      } else {
+      const weekStart = currentWeekStart;
+      const weekEnd = addDays(weekStart, 5);
+      const weekItems = SCHEDULE.lessons.filter(l => {
       const d = parseISO(l.date);
       return d >= weekStart && d <= weekEnd;
-    });
+      });
 
-    const label = weekItems.length
+      const label = weekItems.length
       ? weekBadge(weekItems[0].week_type_label, weekItems[0].week_type)
       : "";
-    navLabel.innerHTML = `${fmtDateShort(weekStart)}–${fmtDateFull(weekEnd)} ${label}`;
+      navLabel.innerHTML = `${fmtDateShort(weekStart)}–${fmtDateFull(weekEnd)} ${label}`;
 
-    if (weekItems.length === 0) {
+      if (weekItems.length === 0) {
       content.innerHTML = '<div class="empty">Немає занять на цьому тижні</div>';
       return;
-    }
+      }
 
-    const byDate = {};
-    const order = [];
-    for (let i = 0; i < 6; i++) {
+      const byDate = {};
+      const order = [];
+      for (let i = 0; i < 6; i++) {
       const d = addDays(weekStart, i);
       order.push(toISO(d));
       byDate[toISO(d)] = [];
@@ -388,32 +390,34 @@ function render() {
       const badge = dayItems.length ? weekBadge(dayItems[0].week_type_label, dayItems[0].week_type) : "";
       html += `
         <div class="day-heading">
-          <span class="d-name">${isToday ? "📍 " : ""}${SCHEDULE_DAY_NAME(iso)}</span>
-          <span class="d-date">${fmtDateShort(d)} ${badge}</span>
-        </div>`;
+        <span class="d-name">${isToday ? "📍 " : ""}${SCHEDULE_DAY_NAME(iso)}</span>
+        <span class="d-date">${fmtDateShort(d)} ${badge}</span>
+      </div>`;
       if (dayItems.length === 0) {
-        html += `<div class="card"><div class="empty" style="padding:14px;">Немає занять</div></div>`;
+      html += `<div class="card">
+        <div class="empty" style="padding:14px;">Немає занять</div>
+      </div>`;
       } else {
-        html += `<div class="card">${dayItems.map(i => lessonRow(i, true)).join("")}</div>`;
+      html += `<div class="card">${dayItems.map(i => lessonRow(i, true)).join("")}</div>`;
       }
-    }
-    content.innerHTML = html;
-  }
-}
+      }
+      content.innerHTML = html;
+      }
+      }
 
-function SCHEDULE_DAY_NAME(iso) {
-  const item = SCHEDULE.lessons.find(l => l.date === iso);
-  if (item) return item.weekday;
-  const NAMES = ["Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"];
-  const idx = (parseISO(iso).getDay() + 6) % 7;
-  return NAMES[idx] || "";
-}
+      function SCHEDULE_DAY_NAME(iso) {
+      const item = SCHEDULE.lessons.find(l => l.date === iso);
+      if (item) return item.weekday;
+      const NAMES = ["Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"];
+      const idx = (parseISO(iso).getDay() + 6) % 7;
+      return NAMES[idx] || "";
+      }
 
-load().catch(err => {
-  document.getElementById("content").innerHTML =
-    '<div class="empty">Не вдалося завантажити schedule.json</div>';
-  console.error(err);
-});
-</script>
-</body>
+      load().catch(err => {
+      document.getElementById("content").innerHTML =
+      '<div class="empty">Не вдалося завантажити schedule.json</div>';
+      console.error(err);
+      });
+    </script>
+  </body>
 </html>
