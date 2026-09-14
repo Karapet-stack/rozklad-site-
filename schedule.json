@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T19:08:14",
+  "generated_at": "2026-09-14T19:12:01",
   "today": "2026-09-14",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -393,7 +393,7 @@
       "time": "08:30–09:15",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -405,7 +405,7 @@
       "time": "09:20–10:05",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -417,7 +417,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -429,7 +429,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -441,7 +441,7 @@
       "time": "12:20–13:05",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -453,7 +453,7 @@
       "time": "13:10–13:55",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -465,7 +465,7 @@
       "time": "14:05–14:50",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-07",
@@ -477,7 +477,7 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -489,7 +489,7 @@
       "time": "08:30–09:15",
       "group": "Р-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -501,7 +501,7 @@
       "time": "09:20–10:05",
       "group": "Р-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -512,8 +512,8 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
-      "conducted": false
+      "subject": "Операційні системи",
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -524,8 +524,8 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
-      "conducted": false
+      "subject": "Операційні системи",
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -537,7 +537,7 @@
       "time": "12:20–13:05",
       "group": "Т-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -549,7 +549,7 @@
       "time": "13:10–13:55",
       "group": "Т-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -559,9 +559,9 @@
       "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
+      "group": "Зв-11",
+      "subject": "Креслення",
+      "conducted": true
     },
     {
       "date": "2026-09-08",
@@ -571,57 +571,9 @@
       "week_type_label": "Знаменник",
       "lesson": 8,
       "time": "14:55–15:40",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-09",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Оп-21",
-      "subject": "Компютерні мережі",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-09",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Оп-21",
-      "subject": "Компютерні мережі",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-09",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
       "group": "Зв-11",
       "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-09",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-09",
@@ -631,9 +583,9 @@
       "week_type_label": "Знаменник",
       "lesson": 5,
       "time": "12:20–13:05",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
-      "conducted": false
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
+      "conducted": true
     },
     {
       "date": "2026-09-09",
@@ -643,9 +595,9 @@
       "week_type_label": "Знаменник",
       "lesson": 6,
       "time": "13:10–13:55",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
-      "conducted": false
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
+      "conducted": true
     },
     {
       "date": "2026-09-09",
@@ -657,7 +609,7 @@
       "time": "14:05–14:50",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-09",
@@ -669,7 +621,7 @@
       "time": "14:55–15:40",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -681,7 +633,7 @@
       "time": "08:30–09:15",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -693,7 +645,7 @@
       "time": "09:20–10:05",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -705,7 +657,7 @@
       "time": "10:15–11:00",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -717,7 +669,7 @@
       "time": "11:05–11:50",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -727,9 +679,9 @@
       "week_type_label": "Знаменник",
       "lesson": 5,
       "time": "12:20–13:05",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
-      "conducted": false
+      "group": "М-1",
+      "subject": "Креслення",
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -739,9 +691,9 @@
       "week_type_label": "Знаменник",
       "lesson": 6,
       "time": "13:10–13:55",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
-      "conducted": false
+      "group": "М-1",
+      "subject": "Креслення",
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -753,7 +705,7 @@
       "time": "14:05–14:50",
       "group": "Оп-21",
       "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-10",
@@ -765,7 +717,7 @@
       "time": "14:55–15:40",
       "group": "Оп-21",
       "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -777,7 +729,7 @@
       "time": "08:30–09:15",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -789,7 +741,7 @@
       "time": "09:20–10:05",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -801,7 +753,7 @@
       "time": "10:15–11:00",
       "group": "Зв-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -813,7 +765,7 @@
       "time": "11:05–11:50",
       "group": "Зв-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -825,7 +777,7 @@
       "time": "12:00–12:45",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-11",
@@ -837,7 +789,7 @@
       "time": "12:50–13:35",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -847,9 +799,9 @@
       "week_type_label": "Чисельник",
       "lesson": 1,
       "time": "08:30–09:15",
-      "group": "Т-11",
-      "subject": "Креслення",
-      "conducted": false
+      "group": "Е-1",
+      "subject": "Інформаціні технології",
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -859,9 +811,9 @@
       "week_type_label": "Чисельник",
       "lesson": 2,
       "time": "09:20–10:05",
-      "group": "Т-11",
-      "subject": "Креслення",
-      "conducted": false
+      "group": "Е-1",
+      "subject": "Інформаціні технології",
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -873,7 +825,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -885,7 +837,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -897,7 +849,7 @@
       "time": "12:20–13:05",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -909,7 +861,7 @@
       "time": "13:10–13:55",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -921,7 +873,7 @@
       "time": "14:05–14:50",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-14",
@@ -933,31 +885,7 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -1015,8 +943,8 @@
       "week_type_label": "Чисельник",
       "lesson": 7,
       "time": "14:05–14:50",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1027,8 +955,8 @@
       "week_type_label": "Чисельник",
       "lesson": 8,
       "time": "14:55–15:40",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1039,8 +967,8 @@
       "week_type_label": "Чисельник",
       "lesson": 1,
       "time": "08:30–09:15",
-      "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "group": "О-1",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1051,8 +979,8 @@
       "week_type_label": "Чисельник",
       "lesson": 2,
       "time": "09:20–10:05",
-      "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "group": "О-1",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1087,8 +1015,8 @@
       "week_type_label": "Чисельник",
       "lesson": 5,
       "time": "12:20–13:05",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
+      "group": "М-1",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1099,8 +1027,8 @@
       "week_type_label": "Чисельник",
       "lesson": 6,
       "time": "13:10–13:55",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
+      "group": "М-1",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -1157,10 +1085,34 @@
       "weekday": "Четвер",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
+      "lesson": 3,
+      "time": "10:15–11:00",
+      "group": "Оп-21",
+      "subject": "Компютерні мережі",
+      "conducted": false
+    },
+    {
+      "date": "2026-09-17",
+      "weekday_index": 3,
+      "weekday": "Четвер",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 4,
+      "time": "11:05–11:50",
+      "group": "Оп-21",
+      "subject": "Компютерні мережі",
+      "conducted": false
+    },
+    {
+      "date": "2026-09-17",
+      "weekday_index": 3,
+      "weekday": "Четвер",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
       "lesson": 5,
       "time": "12:20–13:05",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
+      "group": "М-1",
+      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -1171,8 +1123,8 @@
       "week_type_label": "Чисельник",
       "lesson": 6,
       "time": "13:10–13:55",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
+      "group": "М-1",
+      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -1325,6 +1277,30 @@
       "weekday": "Понеділок",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "Оп-21",
+      "subject": "Компютерні мережі",
+      "conducted": false
+    },
+    {
+      "date": "2026-09-21",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "Оп-21",
+      "subject": "Компютерні мережі",
+      "conducted": false
+    },
+    {
+      "date": "2026-09-21",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "МБК-1",
@@ -1421,30 +1397,6 @@
       "weekday": "Середа",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Оп-21",
-      "subject": "Операційні системи",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
@@ -1469,10 +1421,10 @@
       "weekday": "Четвер",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
+      "lesson": 7,
+      "time": "14:05–14:50",
+      "group": "Оп-21",
+      "subject": "Засоби комп'ютерних іформаціних систем",
       "conducted": false
     },
     {
@@ -1481,34 +1433,10 @@
       "weekday": "Четвер",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-24",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-24",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Е-1",
-      "subject": "Інформаціні технології",
+      "lesson": 8,
+      "time": "14:55–15:40",
+      "group": "Оп-21",
+      "subject": "Засоби комп'ютерних іформаціних систем",
       "conducted": false
     },
     {
@@ -1656,30 +1584,6 @@
       "conducted": false
     },
     {
-      "date": "2026-09-29",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-29",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-09-30",
       "weekday_index": 2,
       "weekday": "Середа",
@@ -1724,30 +1628,6 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-01",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-01",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
       "subject": "Креслення",
       "conducted": false
     },
@@ -1805,30 +1685,6 @@
       "weekday": "Понеділок",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Е-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-05",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Е-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-05",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "МБК-1",
@@ -1940,30 +1796,6 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-08",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-08",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
       "subject": "Креслення",
       "conducted": false
     },
@@ -2021,30 +1853,6 @@
       "weekday": "Понеділок",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Е-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-12",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Е-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-12",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "МБК-1",
@@ -2061,30 +1869,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-13",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-13",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -2132,30 +1916,6 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-15",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-15",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
       "subject": "Креслення",
       "conducted": false
     },
@@ -2208,102 +1968,6 @@
       "conducted": false
     },
     {
-      "date": "2026-10-20",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-20",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-20",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-20",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-21",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-21",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-22",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-22",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-10-23",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -2349,78 +2013,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-27",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-27",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-28",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-28",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-29",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-29",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -2472,78 +2064,6 @@
       "conducted": false
     },
     {
-      "date": "2026-11-03",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-03",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-03",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-03",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-05",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-05",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-11-06",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -2589,54 +2109,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-10",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-10",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-12",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-12",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -2688,78 +2160,6 @@
       "conducted": false
     },
     {
-      "date": "2026-11-17",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-17",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-17",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-17",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-19",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-19",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-11-20",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -2805,54 +2205,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-24",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-24",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-26",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-26",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -2904,78 +2256,6 @@
       "conducted": false
     },
     {
-      "date": "2026-12-01",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-01",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-01",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-01",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-03",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-03",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-12-04",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -3024,54 +2304,6 @@
       "conducted": false
     },
     {
-      "date": "2026-12-08",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-08",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-10",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-10",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
       "date": "2026-12-11",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -3117,198 +2349,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-22",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-22",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-29",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-29",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "Т-11",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2027-01-05",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-01-05",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-01-19",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-01-19",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-02-02",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-02-02",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-02-16",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "М-1",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2027-02-16",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "М-1",
-      "subject": "Креслення",
       "conducted": false
     }
   ]
