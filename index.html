@@ -1,1093 +1,1443 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#0f172a">
-  <title>Розклад занять</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <style>
-    * {
-      box-sizing: border-box;
+<title>Розклад занять</title>
+
+<style>
+    :root {
+        --bg: #0b1120;
+        --bg2: #111827;
+        --surface: #151e2e;
+        --surface2: #1b2638;
+        --surface3: #202d42;
+
+        --border: rgba(255,255,255,.08);
+
+        --text: #f1f5f9;
+        --text2: #cbd5e1;
+        --muted: #94a3b8;
+
+        --accent: #3b82f6;
+        --accent2: #2563eb;
+
+        --numerator: #60a5fa;
+        --denominator: #fbbf24;
+
+        --green: #22c55e;
+        --green-bg: rgba(34,197,94,.13);
+
+        --shadow: 0 12px 30px rgba(0,0,0,.28);
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: #f1f5f9;
-      color: #0f172a;
-      font-family: Arial, Helvetica, sans-serif;
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        background: var(--bg);
     }
 
     body {
-      min-height: 100vh;
+        margin: 0;
+        min-height: 100vh;
+
+        font-family:
+            Inter,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Arial,
+            sans-serif;
+
+        color: var(--text);
+
+        background:
+            radial-gradient(
+                circle at 50% -10%,
+                rgba(37,99,235,.22),
+                transparent 38%
+            ),
+            linear-gradient(
+                180deg,
+                #0b1120 0%,
+                #0f172a 45%,
+                #0b1120 100%
+            );
     }
 
-    .container {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 14px;
+    button {
+        font: inherit;
     }
+
+    .app {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 16px 14px 40px;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
-      background: #0f172a;
-      color: white;
-      border-radius: 18px;
-      padding: 18px;
-      margin-bottom: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,.12);
+        padding: 8px 2px 18px;
     }
 
-    header h1 {
-      margin: 0 0 6px;
-      font-size: 24px;
+    .header-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
 
-    #todayLine {
-      font-size: 14px;
-      opacity: .9;
+    .logo {
+        width: 48px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 15px;
+
+        background:
+            linear-gradient(
+                145deg,
+                #3b82f6,
+                #1d4ed8
+            );
+
+        box-shadow:
+            0 8px 22px rgba(37,99,235,.32);
+
+        font-size: 25px;
     }
 
-    #updatedLine {
-      font-size: 12px;
-      opacity: .65;
-      margin-top: 5px;
+    .title-box {
+        flex: 1;
     }
+
+    h1 {
+        margin: 0;
+
+        font-size: 25px;
+        line-height: 1.15;
+        font-weight: 750;
+
+        letter-spacing: -.5px;
+    }
+
+    .today-line {
+        margin-top: 5px;
+
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+    /* =========================
+       TABS
+    ========================= */
 
     .tabs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        padding: 4px;
+
+        background: rgba(255,255,255,.055);
+        border: 1px solid var(--border);
+
+        border-radius: 14px;
+
+        margin-bottom: 12px;
     }
 
     .tab {
-      border: 0;
-      background: white;
-      color: #475569;
-      padding: 13px 10px;
-      border-radius: 12px;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+        border: 0;
+        background: transparent;
+
+        color: var(--muted);
+
+        padding: 11px 12px;
+
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        font-size: 14px;
+        font-weight: 650;
+
+        transition:
+            background .18s ease,
+            color .18s ease,
+            transform .12s ease;
+    }
+
+    .tab:active {
+        transform: scale(.98);
     }
 
     .tab.active {
-      background: #0f172a;
-      color: white;
+        color: white;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(59,130,246,.95),
+                rgba(37,99,235,.95)
+            );
+
+        box-shadow:
+            0 5px 16px rgba(37,99,235,.25);
     }
 
+    /* =========================
+       NAVIGATION
+    ========================= */
+
     .navigation {
-      display: grid;
-      grid-template-columns: 50px 1fr 50px;
-      gap: 8px;
-      align-items: center;
-      margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 48px 1fr 48px;
+        gap: 9px;
+
+        align-items: center;
+
+        margin-bottom: 10px;
     }
 
     .nav-btn {
-      border: 0;
-      background: white;
-      color: #0f172a;
-      height: 46px;
-      border-radius: 12px;
-      font-size: 25px;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+        height: 46px;
+
+        border: 1px solid var(--border);
+        border-radius: 13px;
+
+        background: var(--surface);
+
+        color: var(--text);
+
+        cursor: pointer;
+
+        font-size: 20px;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.16);
+
+        transition:
+            background .18s ease,
+            transform .12s ease;
     }
 
-    #navLabel {
-      background: white;
-      min-height: 46px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 8px;
-      font-weight: 700;
-      font-size: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    .nav-btn:hover {
+        background: var(--surface2);
     }
+
+    .nav-btn:active {
+        transform: scale(.94);
+    }
+
+    .period-label {
+        min-width: 0;
+
+        height: 46px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 10px;
+
+        border: 1px solid var(--border);
+        border-radius: 13px;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(255,255,255,.065),
+                rgba(255,255,255,.035)
+            );
+
+        color: var(--text);
+
+        font-size: 15px;
+        font-weight: 700;
+
+        text-align: center;
+    }
+
+    /* =========================
+       TODAY BUTTON
+    ========================= */
 
     .today-btn {
-      width: 100%;
-      border: 0;
-      background: white;
-      color: #0f172a;
-      padding: 13px;
-      border-radius: 12px;
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      margin-bottom: 14px;
-      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+        width: 100%;
+
+        border: 1px solid rgba(59,130,246,.28);
+        border-radius: 13px;
+
+        background:
+            linear-gradient(
+                135deg,
+                rgba(59,130,246,.16),
+                rgba(37,99,235,.08)
+            );
+
+        color: #93c5fd;
+
+        padding: 12px;
+
+        cursor: pointer;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        margin-bottom: 16px;
+
+        transition:
+            background .18s ease,
+            transform .12s ease;
     }
 
-    .day-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin: 16px 2px 7px;
-      font-weight: 700;
+    .today-btn:hover {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(59,130,246,.25),
+                rgba(37,99,235,.13)
+            );
     }
 
-    .d-name {
-      font-size: 17px;
+    .today-btn:active {
+        transform: scale(.985);
     }
 
-    .d-date {
-      font-size: 13px;
-      color: #64748b;
-      white-space: nowrap;
+    /* =========================
+       WEEK BADGE
+    ========================= */
+
+    .week-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 14px;
     }
 
-    .card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,.07);
-      margin-bottom: 10px;
+    .week-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+
+        padding: 7px 13px;
+
+        border-radius: 999px;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        border: 1px solid var(--border);
+    }
+
+    .week-badge.numerator {
+        color: var(--numerator);
+
+        background: rgba(59,130,246,.11);
+        border-color: rgba(59,130,246,.18);
+    }
+
+    .week-badge.denominator {
+        color: var(--denominator);
+
+        background: rgba(251,191,36,.09);
+        border-color: rgba(251,191,36,.17);
+    }
+
+    /* =========================
+       DAY CARD
+    ========================= */
+
+    .day-card {
+        margin-bottom: 14px;
+
+        border: 1px solid var(--border);
+        border-radius: 18px;
+
+        overflow: hidden;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(21,30,46,.98),
+                rgba(17,24,39,.98)
+            );
+
+        box-shadow: var(--shadow);
+    }
+
+    .day-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+
+        padding: 14px 15px;
+
+        background: rgba(255,255,255,.025);
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .day-title {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+
+        min-width: 0;
+    }
+
+    .day-icon {
+        width: 34px;
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        border-radius: 10px;
+
+        background: rgba(59,130,246,.12);
+
+        color: #60a5fa;
+
+        font-size: 17px;
+    }
+
+    .day-name {
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    .day-date {
+        margin-top: 2px;
+
+        color: var(--muted);
+
+        font-size: 12px;
+    }
+
+    .current-day {
+        color: #60a5fa;
+
+        font-size: 11px;
+        font-weight: 750;
+
+        white-space: nowrap;
+    }
+
+    /* =========================
+       LESSON
+    ========================= */
+
+    .lessons {
+        padding: 7px;
     }
 
     .lesson {
-      display: grid;
-      grid-template-columns: 52px 1fr;
-      gap: 12px;
-      padding: 13px;
-      border-bottom: 1px solid #e2e8f0;
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 42px 1fr auto;
+
+        gap: 10px;
+
+        align-items: center;
+
+        padding: 12px 9px;
+
+        border-radius: 13px;
+
+        transition: background .15s ease;
     }
 
-    .lesson:last-child {
-      border-bottom: 0;
+    .lesson + .lesson {
+        margin-top: 2px;
+    }
+
+    .lesson:hover {
+        background: rgba(255,255,255,.035);
     }
 
     .lesson-number {
-      font-size: 18px;
-      font-weight: 800;
-      color: #0f172a;
-      text-align: center;
+        width: 34px;
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+
+        background: rgba(255,255,255,.055);
+
+        color: var(--muted);
+
+        font-size: 13px;
+        font-weight: 750;
     }
 
     .lesson-main {
-      min-width: 0;
+        min-width: 0;
     }
 
     .lesson-subject {
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 5px;
+        color: var(--text);
+
+        font-size: 15px;
+        line-height: 1.3;
+
+        font-weight: 700;
+
+        overflow-wrap: anywhere;
     }
 
-    .lesson-group {
-      font-size: 13px;
-      color: #475569;
-      margin-bottom: 3px;
+    .lesson-meta {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 5px 8px;
+
+        margin-top: 5px;
+
+        color: var(--muted);
+
+        font-size: 12px;
     }
 
-    .lesson-teacher {
-      font-size: 13px;
-      color: #64748b;
+    .group {
+        color: #a5b4fc;
     }
 
-    .lesson-time {
-      font-size: 12px;
-      color: #64748b;
-      margin-top: 5px;
+    .time {
+        color: #94a3b8;
     }
 
-    .badge {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 7px;
-      border-radius: 7px;
-      margin-left: 5px;
-      vertical-align: middle;
-      background: #e2e8f0;
-      color: #334155;
+    /* =========================
+       CONDUCTED
+    ========================= */
+
+    .conducted {
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: var(--green-bg);
+
+        border: 1px solid rgba(34,197,94,.2);
+
+        color: var(--green);
+
+        font-size: 16px;
+        font-weight: 800;
+
+        flex-shrink: 0;
     }
+
+    /* =========================
+       EMPTY
+    ========================= */
 
     .empty {
-      text-align: center;
-      color: #64748b;
-      padding: 30px 15px;
-      font-size: 14px;
+        padding: 25px 16px;
+
+        text-align: center;
+
+        color: var(--muted);
+
+        font-size: 14px;
     }
 
-    .error {
-      background: white;
-      border-radius: 15px;
-      padding: 25px;
-      text-align: center;
-      color: #b91c1c;
-      box-shadow: 0 2px 10px rgba(0,0,0,.07);
+    .empty-icon {
+        display: block;
+
+        margin-bottom: 7px;
+
+        font-size: 27px;
+        opacity: .7;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
+    /* =========================
+       FOOTER
+    ========================= */
 
-      header {
-        border-radius: 15px;
-        padding: 15px;
-      }
+    .footer {
+        text-align: center;
 
-      header h1 {
-        font-size: 21px;
-      }
+        padding: 15px 5px 0;
 
-      .lesson {
-        grid-template-columns: 45px 1fr;
-        gap: 8px;
-        padding: 12px 10px;
-      }
+        color: #64748b;
 
-      .lesson-subject {
-        font-size: 15px;
-      }
-
-      .d-name {
-        font-size: 16px;
-      }
+        font-size: 11px;
     }
-  </style>
+
+    /* =========================
+       DESKTOP
+    ========================= */
+
+    @media (min-width: 700px) {
+        .app {
+            padding: 30px 20px 50px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .day-card {
+            border-radius: 20px;
+        }
+
+        .lesson {
+            padding: 13px 12px;
+        }
+    }
+
+    /* =========================
+       SMALL PHONES
+    ========================= */
+
+    @media (max-width: 380px) {
+        .app {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+        }
+
+        .lesson {
+            grid-template-columns: 36px 1fr auto;
+            gap: 8px;
+        }
+
+        .lesson-number {
+            width: 31px;
+            height: 31px;
+        }
+
+        .lesson-subject {
+            font-size: 14px;
+        }
+    }
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="app">
 
-  <header>
-    <h1>📚 Розклад занять</h1>
-    <div id="todayLine">Завантаження...</div>
-    <div id="updatedLine"></div>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
 
-  <div class="tabs">
-    <button class="tab active" data-mode="week">📅 Тиждень</button>
-    <button class="tab" data-mode="day">📌 День</button>
-  </div>
+            <div class="logo">
+                📚
+            </div>
 
-  <div class="navigation">
-    <button class="nav-btn" id="prevBtn">‹</button>
-    <div id="navLabel">Завантаження...</div>
-    <button class="nav-btn" id="nextBtn">›</button>
-  </div>
+            <div class="title-box">
+                <h1>Розклад занять</h1>
 
-  <button class="today-btn" id="todayBtn">
-    📌 Сьогодні
-  </button>
+                <div class="today-line" id="todayLine">
+                    Завантаження...
+                </div>
+            </div>
 
-  <div id="content">
-    <div class="empty">Завантаження розкладу...</div>
-  </div>
+        </div>
+    </header>
+
+
+    <!-- TABS -->
+    <div class="tabs">
+
+        <button
+            class="tab active"
+            id="weekTab"
+            onclick="setMode('week')"
+        >
+            📅 Тиждень
+        </button>
+
+        <button
+            class="tab"
+            id="dayTab"
+            onclick="setMode('day')"
+        >
+            📋 День
+        </button>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+
+        <button
+            class="nav-btn"
+            onclick="previousPeriod()"
+            aria-label="Попередній"
+        >
+            ‹
+        </button>
+
+        <div
+            class="period-label"
+            id="periodLabel"
+        >
+            Завантаження...
+        </div>
+
+        <button
+            class="nav-btn"
+            onclick="nextPeriod()"
+            aria-label="Наступний"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- TODAY -->
+    <button
+        class="today-btn"
+        onclick="goToday()"
+    >
+        📍 Показати сьогодні
+    </button>
+
+
+    <!-- WEEK INFO -->
+    <div
+        class="week-info"
+        id="weekInfo"
+    ></div>
+
+
+    <!-- CONTENT -->
+    <main id="content">
+
+        <div class="empty">
+            <span class="empty-icon">⏳</span>
+            Завантаження розкладу...
+        </div>
+
+    </main>
+
+
+    <div class="footer">
+        Розклад занять • Оновлюється автоматично
+    </div>
 
 </div>
 
+
 <script>
 
-let SCHEDULE = null;
+let schedule = [];
 
 let mode = "week";
 
-// Поточний вибраний день
-let currentDate = null;
+let currentDate = new Date();
 
-// Понеділок вибраного тижня
-let currentWeekStart = null;
+let currentWeekStart = getMonday(currentDate);
 
 
 /* =========================================================
-   РОБОТА З ДАТАМИ
-   ========================================================= */
+   LOAD SCHEDULE
+========================================================= */
+
+async function loadSchedule() {
+
+    try {
+
+        const response = await fetch(
+            "schedule.json?_=" + Date.now(),
+            {
+                cache: "no-store"
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error("Не вдалося завантажити schedule.json");
+        }
+
+        schedule = await response.json();
+
+        render();
+
+    } catch (error) {
+
+        console.error(error);
+
+        document.getElementById("content").innerHTML = `
+            <div class="empty">
+                <span class="empty-icon">⚠️</span>
+                Не вдалося завантажити розклад
+            </div>
+        `;
+    }
+}
+
+
+/* =========================================================
+   DATE HELPERS
+========================================================= */
+
+function toISO(date) {
+
+    const y = date.getFullYear();
+
+    const m = String(date.getMonth() + 1).padStart(2, "0");
+
+    const d = String(date.getDate()).padStart(2, "0");
+
+    return `${y}-${m}-${d}`;
+}
+
 
 function parseISO(iso) {
 
-  const [y, m, d] = iso.split("-").map(Number);
+    const [y, m, d] = iso.split("-").map(Number);
 
-  return new Date(y, m - 1, d);
+    return new Date(y, m - 1, d);
 }
 
 
-function toISO(d) {
+function getMonday(date) {
 
-  const y = d.getFullYear();
+    const d = new Date(date);
 
-  const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = d.getDay();
 
-  const day = String(d.getDate()).padStart(2, "0");
+    const diff = day === 0 ? -6 : 1 - day;
 
-  return `${y}-${m}-${day}`;
+    d.setDate(d.getDate() + diff);
+
+    d.setHours(0, 0, 0, 0);
+
+    return d;
 }
 
 
-function fmtDateShort(d) {
+function addDays(date, amount) {
 
-  return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}`;
+    const d = new Date(date);
+
+    d.setDate(d.getDate() + amount);
+
+    return d;
 }
 
 
-function fmtDateFull(d) {
+function formatDate(date) {
 
-  return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`;
+    return date.toLocaleDateString(
+        "uk-UA",
+        {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric"
+        }
+    );
 }
 
 
-/*
-   Реальна дата користувача.
+function formatShortDate(date) {
 
-   ВАЖЛИВО:
-   Тут НЕ використовується SCHEDULE.today.
-
-   Тобто дата береться безпосередньо
-   з телефона / браузера користувача.
-*/
-function getRealToday() {
-
-  const d = new Date();
-
-  d.setHours(0, 0, 0, 0);
-
-  return d;
-}
-
-
-function getMonday(d) {
-
-  const day = d.getDay();
-
-  // 0 = неділя
-  // 1 = понеділок
-  // ...
-  // 6 = субота
-
-  const diff = (day === 0 ? -6 : 1) - day;
-
-  const res = new Date(d);
-
-  res.setDate(d.getDate() + diff);
-
-  res.setHours(0, 0, 0, 0);
-
-  return res;
-}
-
-
-function addDays(d, n) {
-
-  const res = new Date(d);
-
-  res.setDate(res.getDate() + n);
-
-  res.setHours(0, 0, 0, 0);
-
-  return res;
+    return date.toLocaleDateString(
+        "uk-UA",
+        {
+            day: "2-digit",
+            month: "2-digit"
+        }
+    );
 }
 
 
 /* =========================================================
-   ТИЖДЕНЬ
-   ========================================================= */
+   TODAY
+========================================================= */
 
-function weekBadge(label, type) {
+function updateTodayLine() {
 
-  if (!label && !type) {
-    return "";
-  }
+    const now = new Date();
 
-  const text = label || type || "";
+    const text = now.toLocaleDateString(
+        "uk-UA",
+        {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        }
+    );
 
-  return `<span class="badge">${text}</span>`;
-}
-
-
-/*
-   Визначаємо тип тижня без прив'язки
-   до SCHEDULE.today.
-*/
-function getWeekInfoForDate(iso) {
-
-  const item = SCHEDULE.lessons.find(l => l.date === iso);
-
-  if (!item) {
-    return "";
-  }
-
-  return weekBadge(
-    item.week_type_label,
-    item.week_type
-  );
+    document.getElementById("todayLine").textContent =
+        text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 
 /* =========================================================
-   НАЗВИ ДНІВ
-   ========================================================= */
+   WEEK TYPE
+========================================================= */
 
-function SCHEDULE_DAY_NAME(iso) {
+function getWeekInfoForDate(date) {
 
-  const item = SCHEDULE.lessons.find(
-    l => l.date === iso
-  );
+    const iso = toISO(date);
 
-  if (item) {
-    return item.weekday;
-  }
+    const item = schedule.find(
+        x => x.date === iso
+    );
 
-  const NAMES = [
+    if (item) {
+
+        const value =
+            String(
+                item.week_type ||
+                item.weekType ||
+                item.type ||
+                ""
+            ).toLowerCase();
+
+        if (
+            value.includes("чис") ||
+            value.includes("num")
+        ) {
+            return "numerator";
+        }
+
+        if (
+            value.includes("знам") ||
+            value.includes("den")
+        ) {
+            return "denominator";
+        }
+    }
+
+    return null;
+}
+
+
+function weekBadge(type) {
+
+    if (type === "numerator") {
+
+        return `
+            <div class="week-badge numerator">
+                🔵 Чисельник
+            </div>
+        `;
+    }
+
+    if (type === "denominator") {
+
+        return `
+            <div class="week-badge denominator">
+                🟡 Знаменник
+            </div>
+        `;
+    }
+
+    return "";
+}
+
+
+/* =========================================================
+   MODE
+========================================================= */
+
+function setMode(newMode) {
+
+    mode = newMode;
+
+    document
+        .getElementById("weekTab")
+        .classList.toggle(
+            "active",
+            mode === "week"
+        );
+
+    document
+        .getElementById("dayTab")
+        .classList.toggle(
+            "active",
+            mode === "day"
+        );
+
+    render();
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+function previousPeriod() {
+
+    if (mode === "week") {
+
+        currentWeekStart =
+            addDays(currentWeekStart, -7);
+
+    } else {
+
+        currentDate =
+            addDays(currentDate, -1);
+
+        currentWeekStart =
+            getMonday(currentDate);
+    }
+
+    render();
+}
+
+
+function nextPeriod() {
+
+    if (mode === "week") {
+
+        currentWeekStart =
+            addDays(currentWeekStart, 7);
+
+    } else {
+
+        currentDate =
+            addDays(currentDate, 1);
+
+        currentWeekStart =
+            getMonday(currentDate);
+    }
+
+    render();
+}
+
+
+/* =========================================================
+   TODAY BUTTON
+========================================================= */
+
+function goToday() {
+
+    const today = new Date();
+
+    today.setHours(0, 0, 0, 0);
+
+    currentDate = today;
+
+    currentWeekStart =
+        getMonday(today);
+
+    render();
+}
+
+
+/* =========================================================
+   PERIOD LABEL
+========================================================= */
+
+function updatePeriodLabel() {
+
+    const label =
+        document.getElementById("periodLabel");
+
+    if (mode === "week") {
+
+        const start = currentWeekStart;
+
+        const end =
+            addDays(start, 5);
+
+        label.textContent =
+            `${formatShortDate(start)} – ${formatShortDate(end)}`;
+
+    } else {
+
+        label.textContent =
+            formatDate(currentDate);
+    }
+}
+
+
+/* =========================================================
+   LESSON HELPERS
+========================================================= */
+
+function getLessonsForDate(date) {
+
+    const iso = toISO(date);
+
+    return schedule
+        .filter(item => item.date === iso)
+        .sort((a, b) => {
+
+            const la =
+                Number(
+                    a.lesson ??
+                    a.lesson_number ??
+                    a.number ??
+                    0
+                );
+
+            const lb =
+                Number(
+                    b.lesson ??
+                    b.lesson_number ??
+                    b.number ??
+                    0
+                );
+
+            return la - lb;
+        });
+}
+
+
+function isConducted(item) {
+
+    return (
+        item.conducted === true ||
+        item.conducted === 1 ||
+        item.conducted === "1" ||
+        item.conducted === "true"
+    );
+}
+
+
+function lessonRow(item, showGroup = true) {
+
+    const number =
+        item.lesson ??
+        item.lesson_number ??
+        item.number ??
+        "";
+
+    const subject =
+        item.subject ??
+        item.name ??
+        item.discipline ??
+        "Без назви";
+
+    const group =
+        item.group ??
+        item.group_name ??
+        "";
+
+    const time =
+        item.time ??
+        item.lesson_time ??
+        "";
+
+    const conducted =
+        isConducted(item);
+
+    return `
+        <div class="lesson">
+
+            <div class="lesson-number">
+                ${number}
+            </div>
+
+            <div class="lesson-main">
+
+                <div class="lesson-subject">
+                    ${escapeHTML(subject)}
+                </div>
+
+                <div class="lesson-meta">
+
+                    ${
+                        showGroup && group
+                        ? `
+                            <span class="group">
+                                👥 ${escapeHTML(group)}
+                            </span>
+                          `
+                        : ""
+                    }
+
+                    ${
+                        time
+                        ? `
+                            <span class="time">
+                                🕐 ${escapeHTML(time)}
+                            </span>
+                          `
+                        : ""
+                    }
+
+                </div>
+
+            </div>
+
+            ${
+                conducted
+                ? `
+                    <div
+                        class="conducted"
+                        title="Заняття проведено"
+                    >
+                        ✓
+                    </div>
+                  `
+                : ""
+            }
+
+        </div>
+    `;
+}
+
+
+/* =========================================================
+   DAY NAMES
+========================================================= */
+
+const DAY_NAMES = [
+    "Неділя",
     "Понеділок",
     "Вівторок",
     "Середа",
     "Четвер",
     "П'ятниця",
     "Субота"
-  ];
-
-  const idx =
-    (parseISO(iso).getDay() + 6) % 7;
-
-  return NAMES[idx] || "";
-}
+];
 
 
-/* =========================================================
-   РЯДОК УРОКУ
-   ========================================================= */
-
-function lessonRow(item, showTime = true) {
-
-  let html = "";
-
-  html += `
-    <div class="lesson">
-
-      <div class="lesson-number">
-        ${item.lesson}
-      </div>
-
-      <div class="lesson-main">
-
-        <div class="lesson-subject">
-          ${escapeHtml(item.subject || "")}
-        </div>
-  `;
-
-
-  if (item.group) {
-
-    html += `
-      <div class="lesson-group">
-        👥 ${escapeHtml(item.group)}
-      </div>
-    `;
-  }
-
-
-  if (item.teacher) {
-
-    html += `
-      <div class="lesson-teacher">
-        👨‍🏫 ${escapeHtml(item.teacher)}
-      </div>
-    `;
-  }
-
-
-  if (showTime && item.time) {
-
-    html += `
-      <div class="lesson-time">
-        🕐 ${escapeHtml(item.time)}
-      </div>
-    `;
-  }
-
-
-  html += `
-      </div>
-    </div>
-  `;
-
-  return html;
-}
+const DAY_ICONS = [
+    "🌙",
+    "📘",
+    "📗",
+    "📙",
+    "📕",
+    "📒",
+    "📓"
+];
 
 
 /* =========================================================
-   ЗАХИСТ ВІД HTML У ДАНИХ
-   ========================================================= */
+   RENDER DAY
+========================================================= */
 
-function escapeHtml(value) {
+function renderDay(date, showGroup = true) {
 
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
+    const lessons =
+        getLessonsForDate(date);
 
+    const today =
+        toISO(date) === toISO(new Date());
 
-/* =========================================================
-   ЗАВАНТАЖЕННЯ
-   ========================================================= */
+    const dayName =
+        DAY_NAMES[date.getDay()];
 
-async function load() {
+    const icon =
+        DAY_ICONS[date.getDay()];
 
-  try {
+    let html = `
+        <section class="day-card">
 
-    const res = await fetch(
-      "schedule.json?_=" + Date.now()
-    );
+            <div class="day-header">
 
-    if (!res.ok) {
-      throw new Error(
-        "Не вдалося завантажити schedule.json"
-      );
-    }
+                <div class="day-title">
 
-    SCHEDULE = await res.json();
+                    <div class="day-icon">
+                        ${icon}
+                    </div>
 
+                    <div>
 
-    /*
-       =====================================================
-       ГОЛОВНЕ ВИПРАВЛЕННЯ
+                        <div class="day-name">
+                            ${dayName}
+                        </div>
 
-       Раніше тут було:
+                        <div class="day-date">
+                            ${formatDate(date)}
+                        </div>
 
-       currentDate = parseISO(SCHEDULE.today);
+                    </div>
 
-       Через це сайт використовував дату,
-       яка була записана під час експорту JSON.
+                </div>
 
-       Тепер беремо РЕАЛЬНУ дату телефона.
-       =====================================================
-    */
+                ${
+                    today
+                    ? `
+                        <div class="current-day">
+                            СЬОГОДНІ
+                        </div>
+                      `
+                    : ""
+                }
 
-    const realToday = getRealToday();
+            </div>
 
-    const realTodayISO = toISO(realToday);
+            <div class="lessons">
+    `;
 
-    const todayBadge =
-      getWeekInfoForDate(realTodayISO);
+    if (lessons.length === 0) {
 
+        html += `
+            <div class="empty">
+                <span class="empty-icon">☕</span>
+                Занять немає
+            </div>
+        `;
 
-    document.getElementById("todayLine").innerHTML =
-      `Сьогодні ${fmtDateFull(realToday)} ${todayBadge}`;
+    } else {
 
+        lessons.forEach(item => {
 
-    /*
-       Час генерації JSON залишаємо,
-       щоб показувати коли розклад оновили.
-    */
-
-    if (SCHEDULE.generated_at) {
-
-      const genDate =
-        new Date(SCHEDULE.generated_at);
-
-      document.getElementById("updatedLine").textContent =
-        "Оновлено: " +
-        genDate.toLocaleString("uk-UA");
-    }
-
-
-    /*
-       Початковий день = реальний сьогоднішній день.
-    */
-
-    currentDate = realToday;
-
-
-    /*
-       Початковий тиждень =
-       понеділок поточного календарного тижня.
-    */
-
-    currentWeekStart =
-      getMonday(realToday);
-
-
-    /* =====================================================
-       ПЕРЕМИКАННЯ ТИЖДЕНЬ / ДЕНЬ
-       ===================================================== */
-
-    document
-      .querySelectorAll(".tab")
-      .forEach(tab => {
-
-        tab.addEventListener("click", () => {
-
-          document
-            .querySelectorAll(".tab")
-            .forEach(t =>
-              t.classList.remove("active")
+            html += lessonRow(
+                item,
+                showGroup
             );
 
-          tab.classList.add("active");
-
-          mode = tab.dataset.mode;
-
-          render();
         });
+    }
 
-      });
+    html += `
+            </div>
 
-
-    /* =====================================================
-       ПОПЕРЕДНІЙ
-       ===================================================== */
-
-    document
-      .getElementById("prevBtn")
-      .addEventListener("click", () => {
-
-        step(-1);
-
-      });
-
-
-    /* =====================================================
-       НАСТУПНИЙ
-       ===================================================== */
-
-    document
-      .getElementById("nextBtn")
-      .addEventListener("click", () => {
-
-        step(1);
-
-      });
-
-
-    /* =====================================================
-       КНОПКА СЬОГОДНІ
-       ===================================================== */
-
-    document
-      .getElementById("todayBtn")
-      .addEventListener("click", () => {
-
-        /*
-           Кожного разу заново беремо
-           реальну дату.
-
-           Це важливо, якщо сторінка була
-           відкрита через північ.
-        */
-
-        const realToday = getRealToday();
-
-        currentDate = realToday;
-
-        currentWeekStart =
-          getMonday(realToday);
-
-        render();
-
-      });
-
-
-    /* =====================================================
-       ПЕРШИЙ РЕНДЕР
-       ===================================================== */
-
-    render();
-
-  }
-
-  catch (error) {
-
-    console.error(error);
-
-    document.getElementById("content").innerHTML = `
-      <div class="error">
-        ❌ Не вдалося завантажити розклад.<br><br>
-        Перевірте наявність файлу
-        <b>schedule.json</b>.
-      </div>
+        </section>
     `;
-  }
 
+    return html;
 }
 
 
 /* =========================================================
-   ПЕРЕМИКАННЯ ДАТ
-   ========================================================= */
+   RENDER WEEK
+========================================================= */
 
-function step(dir) {
+function renderWeek() {
 
-  if (mode === "day") {
+    let html = "";
 
-    /*
-       У режимі ДЕНЬ:
-       ← попередній день
-       → наступний день
-    */
+    const weekType =
+        getWeekInfoForDate(
+            currentWeekStart
+        ) ||
+        getWeekInfoForDate(
+            addDays(currentWeekStart, 1)
+        ) ||
+        getWeekInfoForDate(
+            addDays(currentWeekStart, 2)
+        ) ||
+        getWeekInfoForDate(
+            addDays(currentWeekStart, 3)
+        ) ||
+        getWeekInfoForDate(
+            addDays(currentWeekStart, 4)
+        ) ||
+        getWeekInfoForDate(
+            addDays(currentWeekStart, 5)
+        );
 
-    currentDate =
-      addDays(currentDate, dir);
+    document.getElementById("weekInfo").innerHTML =
+        weekBadge(weekType);
 
-  }
+    for (let i = 0; i < 6; i++) {
 
-  else {
+        const date =
+            addDays(currentWeekStart, i);
 
-    /*
-       У режимі ТИЖДЕНЬ:
-       ← попередній тиждень
-       → наступний тиждень
-    */
+        html += renderDay(
+            date,
+            true
+        );
+    }
 
-    currentWeekStart =
-      addDays(
-        currentWeekStart,
-        dir * 7
-      );
-  }
-
-  render();
+    return html;
 }
 
 
 /* =========================================================
-   ОСНОВНИЙ RENDER
-   ========================================================= */
+   RENDER SINGLE DAY
+========================================================= */
+
+function renderSingleDay() {
+
+    const weekType =
+        getWeekInfoForDate(
+            currentDate
+        );
+
+    document.getElementById("weekInfo").innerHTML =
+        weekBadge(weekType);
+
+    return renderDay(
+        currentDate,
+        true
+    );
+}
+
+
+/* =========================================================
+   MAIN RENDER
+========================================================= */
 
 function render() {
 
-  const content =
-    document.getElementById("content");
+    updateTodayLine();
 
-  const navLabel =
-    document.getElementById("navLabel");
+    updatePeriodLabel();
 
+    if (mode === "week") {
 
-  /* =======================================================
-     РЕЖИМ ДЕНЬ
-     ======================================================= */
+        document.getElementById("content").innerHTML =
+            renderWeek();
 
-  if (mode === "day") {
+    } else {
 
-    const iso =
-      toISO(currentDate);
-
-
-    const weekdayIdx =
-      (currentDate.getDay() + 6) % 7;
-
-
-    const items =
-      SCHEDULE.lessons
-        .filter(l => l.date === iso)
-        .sort(
-          (a, b) =>
-            Number(a.lesson) -
-            Number(b.lesson)
-        );
-
-
-    const label =
-      items.length
-        ? weekBadge(
-            items[0].week_type_label,
-            items[0].week_type
-          )
-        : getWeekInfoForDate(iso);
-
-
-    navLabel.innerHTML =
-      `${fmtDateFull(currentDate)} ${label}`;
-
-
-    /*
-       Неділя
-    */
-
-    if (weekdayIdx > 5) {
-
-      content.innerHTML =
-        '<div class="empty">Неділя — занять немає</div>';
-
-      return;
+        document.getElementById("content").innerHTML =
+            renderSingleDay();
     }
-
-
-    /*
-       Немає занять
-    */
-
-    if (items.length === 0) {
-
-      content.innerHTML =
-        '<div class="empty">Немає занять цього дня</div>';
-
-      return;
-    }
-
-
-    /*
-       Виводимо уроки
-    */
-
-    content.innerHTML = `
-      <div class="card">
-        ${items
-          .map(i => lessonRow(i, true))
-          .join("")}
-      </div>
-    `;
-
-    return;
-  }
-
-
-  /* =======================================================
-     РЕЖИМ ТИЖДЕНЬ
-     ======================================================= */
-
-  const weekStart =
-    currentWeekStart;
-
-
-  /*
-     Понеділок + 5 днів = субота
-  */
-
-  const weekEnd =
-    addDays(weekStart, 5);
-
-
-  /*
-     Вибираємо уроки цього тижня.
-  */
-
-  const weekItems =
-    SCHEDULE.lessons.filter(l => {
-
-      const d = parseISO(l.date);
-
-      return (
-        d >= weekStart &&
-        d <= weekEnd
-      );
-
-    });
-
-
-  /*
-     Визначаємо тип тижня.
-
-     Якщо є заняття — беремо з них.
-     Якщо немає — пробуємо знайти
-     інформацію по понеділку.
-  */
-
-  let label = "";
-
-  if (weekItems.length) {
-
-    label =
-      weekBadge(
-        weekItems[0].week_type_label,
-        weekItems[0].week_type
-      );
-
-  }
-  else {
-
-    const mondayISO =
-      toISO(weekStart);
-
-    label =
-      getWeekInfoForDate(mondayISO);
-  }
-
-
-  navLabel.innerHTML =
-    `${fmtDateShort(weekStart)}–${fmtDateFull(weekEnd)} ${label}`;
-
-
-  /*
-     Якщо тиждень повністю порожній.
-  */
-
-  if (weekItems.length === 0) {
-
-    content.innerHTML =
-      '<div class="empty">Немає занять на цьому тижні</div>';
-
-    return;
-  }
-
-
-  /* =======================================================
-     ГРУПУЄМО ПО ДНЯХ
-     ======================================================= */
-
-  const byDate = {};
-
-  const order = [];
-
-
-  for (let i = 0; i < 6; i++) {
-
-    const d =
-      addDays(weekStart, i);
-
-    const iso =
-      toISO(d);
-
-    order.push(iso);
-
-    byDate[iso] = [];
-  }
-
-
-  for (const item of weekItems) {
-
-    if (byDate[item.date]) {
-
-      byDate[item.date].push(item);
-    }
-  }
-
-
-  /* =======================================================
-     ФОРМУЄМО HTML
-     ======================================================= */
-
-  let html = "";
-
-
-  /*
-     Реальна дата сьогодні.
-
-     ВАЖЛИВО:
-     НЕ використовуємо SCHEDULE.today.
-  */
-
-  const realToday =
-    getRealToday();
-
-  const realTodayISO =
-    toISO(realToday);
-
-
-  for (const iso of order) {
-
-    const dayItems =
-      byDate[iso].sort(
-        (a, b) =>
-          Number(a.lesson) -
-          Number(b.lesson)
-      );
-
-
-    const d =
-      parseISO(iso);
-
-
-    /*
-       Ось тут теж виправлено.
-
-       Раніше:
-
-       const isToday = iso === SCHEDULE.today;
-
-       Тепер:
-
-       const isToday = iso === realTodayISO;
-    */
-
-    const isToday =
-      iso === realTodayISO;
-
-
-    const badge =
-      dayItems.length
-        ? weekBadge(
-            dayItems[0].week_type_label,
-            dayItems[0].week_type
-          )
-        : getWeekInfoForDate(iso);
-
-
-    html += `
-      <div class="day-heading">
-
-        <span class="d-name">
-          ${isToday ? "📍 " : ""}
-          ${SCHEDULE_DAY_NAME(iso)}
-        </span>
-
-        <span class="d-date">
-          ${fmtDateShort(d)}
-          ${badge}
-        </span>
-
-      </div>
-    `;
-
-
-    /*
-       Якщо цього дня немає занять.
-    */
-
-    if (dayItems.length === 0) {
-
-      html += `
-        <div class="card">
-
-          <div
-            class="empty"
-            style="padding:14px;"
-          >
-            Немає занять
-          </div>
-
-        </div>
-      `;
-
-    }
-
-    else {
-
-      /*
-         Якщо заняття є.
-      */
-
-      html += `
-        <div class="card">
-
-          ${dayItems
-            .map(i =>
-              lessonRow(i, true)
-            )
-            .join("")}
-
-        </div>
-      `;
-    }
-
-  }
-
-
-  content.innerHTML = html;
 }
 
 
 /* =========================================================
-   СТАРТ
-   ========================================================= */
+   ESCAPE HTML
+========================================================= */
 
-load();
+function escapeHTML(value) {
+
+    return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+
+/* =========================================================
+   START
+========================================================= */
+
+updateTodayLine();
+
+loadSchedule();
 
 </script>
 
