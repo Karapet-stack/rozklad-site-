@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:53:47",
+  "generated_at": "2026-09-14T18:05:29",
   "today": "2026-09-14",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -943,8 +943,8 @@
       "week_type_label": "Чисельник",
       "lesson": 7,
       "time": "14:05–14:50",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -955,8 +955,8 @@
       "week_type_label": "Чисельник",
       "lesson": 8,
       "time": "14:55–15:40",
-      "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "group": "Зв-11",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
