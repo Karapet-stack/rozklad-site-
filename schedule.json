@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T19:50:10",
-  "today": "2026-09-14",
+  "generated_at": "2026-09-15T11:02:11",
+  "today": "2026-09-15",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -896,7 +896,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "Операційні системи",
       "conducted": false
     },
     {
@@ -908,7 +908,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "Операційні системи",
       "conducted": false
     },
     {
