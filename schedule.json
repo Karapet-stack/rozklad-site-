@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T11:02:11",
+  "generated_at": "2026-09-15T12:43:17",
   "today": "2026-09-15",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -897,7 +897,7 @@
       "time": "10:15–11:00",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -909,7 +909,7 @@
       "time": "11:05–11:50",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -921,7 +921,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -933,7 +933,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -945,7 +945,7 @@
       "time": "14:05–14:50",
       "group": "Зв-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-15",
@@ -957,7 +957,7 @@
       "time": "14:55–15:40",
       "group": "Зв-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
