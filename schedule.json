@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T15:34:42",
-  "today": "2026-09-15",
+  "generated_at": "2026-09-16T10:28:39",
+  "today": "2026-09-16",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -969,7 +969,7 @@
       "time": "08:30–09:15",
       "group": "О-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
@@ -981,7 +981,7 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
