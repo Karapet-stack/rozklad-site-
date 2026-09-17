@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T10:28:39",
-  "today": "2026-09-16",
+  "generated_at": "2026-09-17T08:34:37",
+  "today": "2026-09-17",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -993,7 +993,7 @@
       "time": "12:20–13:05",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
@@ -1005,7 +1005,7 @@
       "time": "13:10–13:55",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
@@ -1017,7 +1017,7 @@
       "time": "14:05–14:50",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-16",
@@ -1029,7 +1029,7 @@
       "time": "14:55–15:40",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-17",
