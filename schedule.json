@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-17T14:47:30",
-  "today": "2026-09-17",
+  "generated_at": "2026-09-18T09:27:01",
+  "today": "2026-09-18",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -1137,7 +1137,7 @@
       "time": "08:30–09:15",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-18",
@@ -1149,6 +1149,30 @@
       "time": "09:20–10:05",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
+      "conducted": true
+    },
+    {
+      "date": "2026-09-18",
+      "weekday_index": 4,
+      "weekday": "П’ятниця",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 3,
+      "time": "10:15–11:00",
+      "group": "Зв-11",
+      "subject": "Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-09-18",
+      "weekday_index": 4,
+      "weekday": "П’ятниця",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 4,
+      "time": "11:05–11:50",
+      "group": "Зв-11",
+      "subject": "Креслення",
       "conducted": false
     },
     {
