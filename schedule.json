@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:33:24",
+  "generated_at": "2026-09-18T13:34:07",
   "today": "2026-09-18",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -1185,7 +1185,7 @@
       "time": "12:00–12:45",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-18",
@@ -1197,7 +1197,7 @@
       "time": "12:50–13:35",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-21",
