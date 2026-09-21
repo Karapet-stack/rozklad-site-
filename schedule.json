@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-18T13:34:07",
-  "today": "2026-09-18",
-  "today_week_type": "numerator",
-  "today_week_label": "Чисельник",
+  "generated_at": "2026-09-21T08:32:54",
+  "today": "2026-09-21",
+  "today_week_type": "denominator",
+  "today_week_label": "Знаменник",
   "groups": [
     "Е-1",
     "Е-11",
@@ -1209,7 +1209,7 @@
       "time": "08:30–09:15",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-21",
@@ -1221,7 +1221,7 @@
       "time": "09:20–10:05",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-21",
@@ -1267,8 +1267,8 @@
       "week_type_label": "Знаменник",
       "lesson": 6,
       "time": "13:10–13:55",
-      "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "group": "Зв-11",
+      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -1279,8 +1279,8 @@
       "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
-      "group": "МБК-1",
-      "subject": "Інженерна та компютерна графіка",
+      "group": "Зв-11",
+      "subject": "Креслення",
       "conducted": false
     },
     {
