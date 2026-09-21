@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:12:17",
+  "generated_at": "2026-09-21T21:55:26",
   "today": "2026-09-21",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
@@ -1303,8 +1303,8 @@
       "week_type_label": "Знаменник",
       "lesson": 1,
       "time": "08:30–09:15",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
+      "group": "Зв-11",
+      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -1315,8 +1315,8 @@
       "week_type_label": "Знаменник",
       "lesson": 2,
       "time": "09:20–10:05",
-      "group": "Р-11",
-      "subject": "Інформаціні технології",
+      "group": "Зв-11",
+      "subject": "Креслення",
       "conducted": false
     },
     {
