@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T21:55:26",
-  "today": "2026-09-21",
+  "generated_at": "2026-09-23T13:47:45",
+  "today": "2026-09-23",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
   "groups": [
@@ -1305,7 +1305,7 @@
       "time": "08:30–09:15",
       "group": "Зв-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1317,7 +1317,7 @@
       "time": "09:20–10:05",
       "group": "Зв-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1329,7 +1329,7 @@
       "time": "10:15–11:00",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1341,7 +1341,7 @@
       "time": "11:05–11:50",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1353,7 +1353,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1365,7 +1365,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1377,7 +1377,7 @@
       "time": "14:05–14:50",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-22",
@@ -1389,79 +1389,7 @@
       "time": "14:55–15:40",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 5,
-      "time": "12:20–13:05",
-      "group": "М-1",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "М-1",
-      "subject": "Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 7,
-      "time": "14:05–14:50",
-      "group": "Е-31",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-09-23",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 8,
-      "time": "14:55–15:40",
-      "group": "Е-31",
-      "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-24",
@@ -1497,7 +1425,7 @@
       "time": "10:15–11:00",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-24",
@@ -1509,7 +1437,7 @@
       "time": "11:05–11:50",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-24",
@@ -1545,7 +1473,7 @@
       "time": "14:05–14:50",
       "group": "Оп-21",
       "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-24",
@@ -1557,7 +1485,7 @@
       "time": "14:55–15:40",
       "group": "Оп-21",
       "subject": "Засоби комп'ютерних іформаціних систем",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-25",
@@ -1617,7 +1545,7 @@
       "time": "12:00–12:45",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-25",
@@ -1629,7 +1557,7 @@
       "time": "12:50–13:35",
       "group": "Оп-21",
       "subject": "Операційні системи",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-28",
