@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T12:28:17",
-  "today": "2026-09-28",
+  "generated_at": "2026-09-29T10:10:07",
+  "today": "2026-09-29",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -1617,7 +1617,7 @@
       "time": "08:30–09:15",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1629,7 +1629,7 @@
       "time": "09:20–10:05",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1641,7 +1641,7 @@
       "time": "10:15–11:00",
       "group": "М-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1653,7 +1653,7 @@
       "time": "11:05–11:50",
       "group": "М-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1665,7 +1665,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1677,7 +1677,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1689,7 +1689,7 @@
       "time": "14:05–14:50",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-29",
@@ -1701,7 +1701,7 @@
       "time": "14:55–15:40",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
