@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T10:10:07",
+  "generated_at": "2026-09-29T13:31:12",
   "today": "2026-09-29",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -1711,7 +1711,7 @@
       "week_type_label": "Чисельник",
       "lesson": 3,
       "time": "10:15–11:00",
-      "group": "Зв-11",
+      "group": "Е-1",
       "subject": "Креслення",
       "conducted": false
     },
@@ -1723,7 +1723,7 @@
       "week_type_label": "Чисельник",
       "lesson": 4,
       "time": "11:05–11:50",
-      "group": "Зв-11",
+      "group": "Е-1",
       "subject": "Креслення",
       "conducted": false
     },
@@ -2045,30 +2045,6 @@
       "weekday": "Середа",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-07",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-07",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
@@ -2205,30 +2181,6 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-14",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "Зв-11",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-14",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
-      "subject": "Креслення",
       "conducted": false
     },
     {
