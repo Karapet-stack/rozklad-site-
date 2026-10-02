@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T13:31:12",
-  "today": "2026-09-29",
+  "generated_at": "2026-10-02T08:44:18",
+  "today": "2026-10-02",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -1713,7 +1713,7 @@
       "time": "10:15–11:00",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
@@ -1725,7 +1725,7 @@
       "time": "11:05–11:50",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
@@ -1737,7 +1737,7 @@
       "time": "12:20–13:05",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
@@ -1749,7 +1749,7 @@
       "time": "13:10–13:55",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
@@ -1761,7 +1761,7 @@
       "time": "14:05–14:50",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-09-30",
@@ -1773,7 +1773,7 @@
       "time": "14:55–15:40",
       "group": "Е-31",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-01",
@@ -1785,7 +1785,7 @@
       "time": "08:30–09:15",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-01",
@@ -1797,7 +1797,7 @@
       "time": "09:20–10:05",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-01",
@@ -1809,7 +1809,7 @@
       "time": "14:05–14:50",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-01",
@@ -1821,7 +1821,7 @@
       "time": "14:55–15:40",
       "group": "Оп-21",
       "subject": "Компютерні мережі",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1833,7 +1833,7 @@
       "time": "08:30–09:15",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1845,7 +1845,7 @@
       "time": "09:20–10:05",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1857,7 +1857,7 @@
       "time": "10:15–11:00",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1869,7 +1869,7 @@
       "time": "11:05–11:50",
       "group": "Е-2",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1881,7 +1881,7 @@
       "time": "12:00–12:45",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-02",
@@ -1893,7 +1893,7 @@
       "time": "12:50–13:35",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
