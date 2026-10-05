@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T08:52:51",
+  "generated_at": "2026-10-05T14:04:25",
   "today": "2026-10-05",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
@@ -1905,7 +1905,7 @@
       "time": "08:30–09:15",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1917,7 +1917,7 @@
       "time": "09:20–10:05",
       "group": "Т-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1929,7 +1929,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1941,7 +1941,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1953,7 +1953,7 @@
       "time": "12:20–13:05",
       "group": "М-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1965,7 +1965,7 @@
       "time": "13:10–13:55",
       "group": "М-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1977,7 +1977,7 @@
       "time": "14:05–14:50",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-05",
@@ -1989,7 +1989,7 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-06",
