@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T08:57:36",
+  "generated_at": "2026-10-12T12:23:42",
   "today": "2026-10-12",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -2217,7 +2217,7 @@
       "time": "08:30–09:15",
       "group": "Т-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2229,7 +2229,7 @@
       "time": "09:20–10:05",
       "group": "Т-11",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2241,7 +2241,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2253,7 +2253,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2265,7 +2265,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2277,7 +2277,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2289,7 +2289,7 @@
       "time": "14:05–14:50",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-12",
@@ -2301,7 +2301,7 @@
       "time": "14:55–15:40",
       "group": "МБК-1",
       "subject": "Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-13",
@@ -2309,8 +2309,8 @@
       "weekday": "Вівторок",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 3,
-      "time": "10:15–11:00",
+      "lesson": 5,
+      "time": "12:20–13:05",
       "group": "Зв-11",
       "subject": "Креслення",
       "conducted": false
@@ -2321,9 +2321,9 @@
       "weekday": "Вівторок",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "Зв-11",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "Е-1",
       "subject": "Креслення",
       "conducted": false
     },
