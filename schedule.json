@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-09T11:05:09",
-  "today": "2026-10-09",
-  "today_week_type": "denominator",
-  "today_week_label": "Знаменник",
+  "generated_at": "2026-10-12T08:57:36",
+  "today": "2026-10-12",
+  "today_week_type": "numerator",
+  "today_week_label": "Чисельник",
   "groups": [
     "Е-1",
     "Е-11",
@@ -2213,6 +2213,30 @@
       "weekday": "Понеділок",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
+      "lesson": 1,
+      "time": "08:30–09:15",
+      "group": "Т-11",
+      "subject": "Інформаціні технології",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-12",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 2,
+      "time": "09:20–10:05",
+      "group": "Т-11",
+      "subject": "Інформаціні технології",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-12",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-11",
@@ -2240,7 +2264,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
@@ -2252,7 +2276,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
