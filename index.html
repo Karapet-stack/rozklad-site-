@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>📚 Розклад</title>
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("theme"); } catch (e) {}
+  if (t !== "dark" && t !== "light") {
+    t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  }
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
 <style>
   :root {
     --accent: #3182ce;
@@ -14,6 +24,22 @@
     --muted: #718096;
     --numerator: #3182ce;
     --denominator: #d69e2e;
+    --accent-soft: #ebf8ff;
+    --warn-soft: #fffff0;
+    color-scheme: light;
+  }
+  :root[data-theme="dark"] {
+    --accent: #4299e1;
+    --bg: #171923;
+    --surface: #232838;
+    --border: #3a4256;
+    --text: #edf2f7;
+    --muted: #a0aec0;
+    --numerator: #63b3ed;
+    --denominator: #f6ad55;
+    --accent-soft: #23395b;
+    --warn-soft: #4a3a1a;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
   body {
@@ -46,8 +72,8 @@
     border-radius: 8px;
     font-size: 12px;
   }
-  .badge.numerator { color: var(--numerator); background: #ebf8ff; }
-  .badge.denominator { color: var(--denominator); background: #fffff0; }
+  .badge.numerator { color: var(--numerator); background: var(--accent-soft); }
+  .badge.denominator { color: var(--denominator); background: var(--warn-soft); }
 
   .tabs {
     display: flex;
@@ -137,7 +163,7 @@
     min-width: 34px;
     height: 34px;
     border-radius: 10px;
-    background: #ebf8ff;
+    background: var(--accent-soft);
     color: var(--accent);
     font-weight: 700;
     display: flex;
@@ -156,7 +182,7 @@
     font-size: 11px;
     font-weight: 700;
     color: var(--accent);
-    background: #ebf8ff;
+    background: var(--accent-soft);
     border-radius: 6px;
     padding: 1px 6px;
     margin-bottom: 2px;
@@ -193,6 +219,12 @@
     font-size: 14px;
   }
 
+  .header-btns {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .bell-btn {
     margin-top: 10px;
     min-height: 40px;
@@ -207,7 +239,7 @@
   }
   .bell-btn.on {
     border-color: var(--accent);
-    background: #ebf8ff;
+    background: var(--accent-soft);
     color: var(--accent);
   }
 
@@ -224,7 +256,10 @@
   <header>
     <h1>📚 Розклад</h1>
     <div class="sub" id="todayLine">Завантаження…</div>
-    <button class="bell-btn" id="bellBtn">🔕 Дзвінок вимкнено</button>
+    <div class="header-btns">
+      <button class="bell-btn" id="bellBtn">🔕 Дзвінок вимкнено</button>
+      <button class="bell-btn" id="themeBtn">🌙 Темна тема</button>
+    </div>
   </header>
 
   <div class="tabs">
@@ -434,7 +469,7 @@ let audioCtx = null;
 let lastRung = "";
 let wakeLock = null;
 
-function playStrike(when, vol) {
+function playStrike(when, vol, out) {
   // "дзвінок" = кілька затухаючих гармонік
   const freqs = [880, 1320, 1760, 2640];
   const gains = [1, 0.5, 0.35, 0.15];
@@ -446,7 +481,7 @@ function playStrike(when, vol) {
     g.gain.setValueAtTime(0.0001, when);
     g.gain.exponentialRampToValueAtTime(vol * gains[i], when + 0.01);
     g.gain.exponentialRampToValueAtTime(0.0001, when + 1.6);
-    osc.connect(g).connect(audioCtx.destination);
+    osc.connect(g).connect(out);
     osc.start(when);
     osc.stop(when + 1.7);
   });
@@ -455,8 +490,18 @@ function playStrike(when, vol) {
 function ringBell(times) {
   if (!audioCtx) return;
   const t0 = audioCtx.currentTime + 0.05;
+  // підсилювач + компресор: гучніше, але без хрипіння/спотворень
+  const master = audioCtx.createGain();
+  master.gain.value = 2.2;
+  const comp = audioCtx.createDynamicsCompressor();
+  comp.threshold.value = -12;
+  comp.knee.value = 10;
+  comp.ratio.value = 12;
+  comp.attack.value = 0.003;
+  comp.release.value = 0.25;
+  master.connect(comp).connect(audioCtx.destination);
   for (let i = 0; i < times; i++) {
-    playStrike(t0 + i * 1.0, 0.25);
+    playStrike(t0 + i * 1.0, 0.5, master);
   }
 }
 
@@ -510,6 +555,20 @@ function checkBell() {
 }
 
 document.getElementById("bellBtn").addEventListener("click", toggleBell);
+
+// ===== Тема (світла/темна) =====
+function updateThemeBtn() {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.getElementById("themeBtn").textContent = dark ? "☀️ Світла тема" : "🌙 Темна тема";
+}
+document.getElementById("themeBtn").addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  const next = dark ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("theme", next); } catch (e) {}
+  updateThemeBtn();
+});
+updateThemeBtn();
 setInterval(checkBell, 1000);
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "visible" && bellOn) requestWakeLock();
