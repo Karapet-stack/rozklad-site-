@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T11:32:18",
+  "generated_at": "2026-10-16T11:33:27",
   "today": "2026-10-16",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -2577,7 +2577,7 @@
       "time": "12:00–12:45",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": true
+      "conducted": false
     },
     {
       "date": "2026-10-16",
@@ -2589,7 +2589,7 @@
       "time": "12:50–13:35",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": true
+      "conducted": false
     },
     {
       "date": "2026-10-19",
