@@ -241,16 +241,6 @@
     font-size: 13px;
     cursor: pointer;
   }
-  .bell-btn.on {
-    border-color: var(--accent);
-    background: var(--accent-soft);
-    color: var(--accent);
-  }
-  .bell-hint {
-    margin-top: 8px;
-    font-size: 11px;
-    color: var(--muted);
-  }
 
   .updated {
     text-align: center;
@@ -266,10 +256,8 @@
     <h1>📚 Розклад</h1>
     <div class="sub" id="todayLine">Завантаження…</div>
     <div class="header-btns">
-      <button class="bell-btn" id="bellBtn">🔕 Дзвінок вимкнено</button>
       <button class="bell-btn" id="themeBtn">🌙 Темна тема</button>
     </div>
-    <div class="bell-hint" id="bellHint">Дзвінок працює, поки сторінка відкрита, а екран увімкнений.</div>
   </header>
 
   <div class="tabs">
@@ -528,134 +516,13 @@ function SCHEDULE_DAY_NAME(iso) {
   return NAMES[idx] || "";
 }
 
-// ===== Дзвінок на початок/кінець пар (автоматично) =====
-let bellOn = false;
-let audioCtx = null;
-let wakeLock = null;
-let lastTick = Date.now();
-const rungEvents = new Set(); // позначки часу, на які вже дзвонили
-
-function playStrike(when, vol, out) {
-  // "дзвінок" = кілька затухаючих гармонік
-  const freqs = [880, 1320, 1760, 2640];
-  const gains = [1, 0.5, 0.35, 0.15];
-  freqs.forEach((f, i) => {
-    const osc = audioCtx.createOscillator();
-    const g = audioCtx.createGain();
-    osc.type = "sine";
-    osc.frequency.value = f;
-    g.gain.setValueAtTime(0.0001, when);
-    g.gain.exponentialRampToValueAtTime(vol * gains[i], when + 0.01);
-    g.gain.exponentialRampToValueAtTime(0.0001, when + 1.6);
-    osc.connect(g).connect(out);
-    osc.start(when);
-    osc.stop(when + 1.7);
-  });
-}
-
-function ringBell(times) {
-  if (!audioCtx) return;
-  if (audioCtx.state === "suspended") audioCtx.resume();
-  const t0 = audioCtx.currentTime + 0.05;
-  // підсилювач + компресор: гучніше, але без хрипіння/спотворень
-  const master = audioCtx.createGain();
-  master.gain.value = 2.2;
-  const comp = audioCtx.createDynamicsCompressor();
-  comp.threshold.value = -12;
-  comp.knee.value = 10;
-  comp.ratio.value = 12;
-  comp.attack.value = 0.003;
-  comp.release.value = 0.25;
-  master.connect(comp).connect(audioCtx.destination);
-  for (let i = 0; i < times; i++) {
-    playStrike(t0 + i * 1.0, 0.5, master);
-  }
-}
-
-async function requestWakeLock() {
-  try {
-    if ("wakeLock" in navigator && bellOn) {
-      wakeLock = await navigator.wakeLock.request("screen");
-    }
-  } catch (e) { /* не критично */ }
-}
-
-function updateBellBtn() {
-  const btn = document.getElementById("bellBtn");
-  btn.classList.toggle("on", bellOn);
-  btn.textContent = bellOn ? "🔔 Дзвінок увімкнено" : "🔕 Дзвінок вимкнено";
-}
-
-function toggleBell() {
-  bellOn = !bellOn;
-  if (bellOn) {
-    // AudioContext можна створювати лише після дотику користувача
-    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-    if (audioCtx.state === "suspended") audioCtx.resume();
-    ringBell(1); // пробний дзвінок
-    lastTick = Date.now();
-    requestWakeLock();
-  } else if (wakeLock) {
-    try { wakeLock.release(); } catch (e) {}
-    wakeLock = null;
-  }
-  updateBellBtn();
-}
-
-// Усі моменти дзвінка на вказану дату: час -> кількість ударів
-// (початок пари = 1 удар, кінець = 2). Однакові моменти різних груп зливаються в один.
-function bellEventsFor(date) {
-  const events = new Map();
-  const iso = toISO(date);
-  const y = date.getFullYear(), mo = date.getMonth(), d = date.getDate();
-
-  function add(hm, strikes) {
-    const m = /^(\d{1,2}):(\d{2})$/.exec(hm);
-    if (!m) return;
-    const ts = new Date(y, mo, d, Number(m[1]), Number(m[2]), 0).getTime();
-    if (!events.has(ts)) events.set(ts, strikes);
-  }
-
-  for (const l of SCHEDULE.lessons) {
-    if (l.date !== iso) continue;
-    const parts = (l.time || "").split("–");
-    if (parts.length !== 2) continue;
-    add(parts[0].trim(), 1);
-    add(parts[1].trim(), 2);
-  }
-  return events;
-}
-
-function checkBell() {
-  const nowMs = Date.now();
-  const from = lastTick;
-  lastTick = nowMs;
-
-  // Якщо за цей час змінилась доба — оновити "Сьогодні" в шапці
-  if (SCHEDULE && toISO(new Date(nowMs)) !== shownTodayISO) {
+// ===== Автооновлення "Сьогодні" після півночі =====
+function checkDay() {
+  if (SCHEDULE && todayISO() !== shownTodayISO) {
     updateTodayLine();
-    if (mode === "week" || mode === "day") render();
-  }
-
-  if (!bellOn || !SCHEDULE) return;
-
-  // Браузер міг "присипляти" вкладку: звук відновлюємо, а пропущені
-  // моменти шукаємо у вікні між попередньою перевіркою і зараз
-  // (але не старіше 60 с, щоб не дзвонити "із запізненням").
-  if (audioCtx && audioCtx.state !== "running") {
-    audioCtx.resume().catch(() => {});
-  }
-
-  const windowStart = Math.max(from, nowMs - 60000);
-  for (const [ts, strikes] of bellEventsFor(new Date(nowMs))) {
-    if (ts > windowStart && ts <= nowMs && !rungEvents.has(ts)) {
-      rungEvents.add(ts);
-      ringBell(strikes);
-    }
+    render();
   }
 }
-
-document.getElementById("bellBtn").addEventListener("click", toggleBell);
 
 // ===== Тема (світла/темна) =====
 function updateThemeBtn() {
@@ -671,12 +538,9 @@ document.getElementById("themeBtn").addEventListener("click", () => {
 });
 updateThemeBtn();
 
-setInterval(checkBell, 1000);
+setInterval(checkDay, 30000);
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible") {
-    if (bellOn) requestWakeLock();
-    checkBell();
-  }
+  if (document.visibilityState === "visible") checkDay();
 });
 load().catch(err => {
   document.getElementById("content").innerHTML =
