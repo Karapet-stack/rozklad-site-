@@ -151,6 +151,9 @@
     padding: 14px;
     margin-bottom: 10px;
   }
+  .card.today {
+    border: 2px solid var(--accent);
+  }
   .lesson-row {
     display: flex;
     align-items: center;
@@ -201,6 +204,7 @@
     align-items: baseline;
     margin: 18px 0 8px;
     padding-left: 2px;
+    scroll-margin-top: 10px;
   }
   .day-heading:first-child { margin-top: 4px; }
   .day-heading .d-name {
@@ -242,6 +246,11 @@
     background: var(--accent-soft);
     color: var(--accent);
   }
+  .bell-hint {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--muted);
+  }
 
   .updated {
     text-align: center;
@@ -260,6 +269,7 @@
       <button class="bell-btn" id="bellBtn">🔕 Дзвінок вимкнено</button>
       <button class="bell-btn" id="themeBtn">🌙 Темна тема</button>
     </div>
+    <div class="bell-hint" id="bellHint">Дзвінок працює, поки сторінка відкрита, а екран увімкнений.</div>
   </header>
 
   <div class="tabs">
@@ -284,6 +294,7 @@ let SCHEDULE = null;
 let mode = "week";       // "week" | "day"
 let currentDate = null;  // Date object — вибраний день (для режиму "день")
 let currentWeekStart = null; // Date object — понеділок обраного тижня
+let shownTodayISO = "";  // яку дату "сьогодні" зараз показано у шапці
 
 function parseISO(iso) {
   const [y, m, d] = iso.split("-").map(Number);
@@ -314,25 +325,63 @@ function addDays(d, n) {
   return res;
 }
 
+// СПРАВЖНЯ сьогоднішня дата пристрою (а не дата, коли згенерували schedule.json)
+function realToday() {
+  const n = new Date();
+  return new Date(n.getFullYear(), n.getMonth(), n.getDate());
+}
+function todayISO() {
+  return toISO(realToday());
+}
+
 function weekBadge(label, type) {
   if (!label) return "";
   const cls = type === "numerator" ? "numerator" : "denominator";
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
+// Тип тижня (чисельник/знаменник) для будь-якої дати —
+// беремо з уроків, а якщо в цей день уроків нема — рахуємо за парністю тижнів.
+function weekTypeFor(d) {
+  if (!SCHEDULE || !SCHEDULE.lessons.length) return null;
+
+  const iso = toISO(d);
+  const same = SCHEDULE.lessons.find(l => l.date === iso);
+  if (same) return { type: same.week_type, label: same.week_type_label };
+
+  const ref = SCHEDULE.lessons[0];
+  const weeks = Math.round((getMonday(d) - getMonday(parseISO(ref.date))) / (7 * 86400000));
+  const flip = Math.abs(weeks) % 2 === 1;
+  const refType = ref.week_type;
+  const type = flip ? (refType === "numerator" ? "denominator" : "numerator") : refType;
+
+  const labelOf = {};
+  SCHEDULE.lessons.forEach(l => { labelOf[l.week_type] = l.week_type_label; });
+  const label = labelOf[type] || (type === "numerator" ? "Чисельник" : "Знаменник");
+  return { type, label };
+}
+
+function updateTodayLine() {
+  const t = realToday();
+  shownTodayISO = toISO(t);
+  const wt = weekTypeFor(t);
+  const badge = wt ? weekBadge(wt.label, wt.type) : "";
+  document.getElementById("todayLine").innerHTML =
+    `Сьогодні ${fmtDateFull(t)} · ${badge}`;
+}
+
 async function load() {
   const res = await fetch("schedule.json?_=" + Date.now());
   SCHEDULE = await res.json();
 
-  document.getElementById("todayLine").innerHTML =
-    `Сьогодні ${fmtDateFull(parseISO(SCHEDULE.today))} · ${weekBadge(SCHEDULE.today_week_label, SCHEDULE.today_week_type)}`;
+  updateTodayLine();
 
   const genDate = new Date(SCHEDULE.generated_at);
   document.getElementById("updatedLine").textContent =
     "Оновлено: " + genDate.toLocaleString("uk-UA");
 
-  currentDate = parseISO(SCHEDULE.today);
-  currentWeekStart = getMonday(currentDate);
+  currentDate = realToday();
+  currentWeekStart = weekStartFor(currentDate);
 
   document.querySelectorAll(".tab").forEach(tab => {
     tab.addEventListener("click", () => {
@@ -345,13 +394,27 @@ async function load() {
 
   document.getElementById("prevBtn").addEventListener("click", () => step(-1));
   document.getElementById("nextBtn").addEventListener("click", () => step(1));
-  document.getElementById("todayBtn").addEventListener("click", () => {
-    currentDate = parseISO(SCHEDULE.today);
-    currentWeekStart = getMonday(currentDate);
-    render();
-  });
+  document.getElementById("todayBtn").addEventListener("click", goToday);
 
   render();
+}
+
+// У неділю показуємо наступний тиждень (поточний уже закінчився)
+function weekStartFor(d) {
+  const monday = getMonday(d);
+  return d.getDay() === 0 ? addDays(monday, 7) : monday;
+}
+
+function goToday() {
+  currentDate = realToday();
+  currentWeekStart = weekStartFor(currentDate);
+  updateTodayLine();
+  render();
+  setTimeout(() => {
+    const el = document.getElementById("today-block");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 50);
 }
 
 function step(dir) {
@@ -381,6 +444,7 @@ function lessonRow(item, showGroup) {
 function render() {
   const content = document.getElementById("content");
   const navLabel = document.getElementById("navLabel");
+  const tISO = todayISO();
 
   if (mode === "day") {
     const iso = toISO(currentDate);
@@ -389,9 +453,8 @@ function render() {
       .filter(l => l.date === iso)
       .sort((a, b) => a.lesson - b.lesson);
 
-    const label = items.length
-      ? weekBadge(items[0].week_type_label, items[0].week_type)
-      : "";
+    const wt = weekTypeFor(currentDate);
+    const label = wt ? weekBadge(wt.label, wt.type) : "";
     navLabel.innerHTML = `${fmtDateFull(currentDate)} ${label}`;
 
     if (weekdayIdx > 5) {
@@ -404,7 +467,8 @@ function render() {
       return;
     }
 
-    content.innerHTML = `<div class="card">${items.map(i => lessonRow(i, true)).join("")}</div>`;
+    content.innerHTML =
+      `<div class="card${iso === tISO ? " today" : ""}">${items.map(i => lessonRow(i, true)).join("")}</div>`;
   } else {
     const weekStart = currentWeekStart;
     const weekEnd = addDays(weekStart, 5);
@@ -413,9 +477,8 @@ function render() {
       return d >= weekStart && d <= weekEnd;
     });
 
-    const label = weekItems.length
-      ? weekBadge(weekItems[0].week_type_label, weekItems[0].week_type)
-      : "";
+    const wt = weekTypeFor(weekStart);
+    const label = wt ? weekBadge(wt.label, wt.type) : "";
     navLabel.innerHTML = `${fmtDateShort(weekStart)}–${fmtDateFull(weekEnd)} ${label}`;
 
     if (weekItems.length === 0) {
@@ -438,17 +501,19 @@ function render() {
     for (const iso of order) {
       const dayItems = byDate[iso].sort((a, b) => a.lesson - b.lesson);
       const d = parseISO(iso);
-      const isToday = iso === SCHEDULE.today;
-      const badge = dayItems.length ? weekBadge(dayItems[0].week_type_label, dayItems[0].week_type) : "";
+      const isToday = iso === tISO;
+      const dwt = weekTypeFor(d);
+      const badge = dwt ? weekBadge(dwt.label, dwt.type) : "";
       html += `
-        <div class="day-heading">
+        <div class="day-heading"${isToday ? ' id="today-block"' : ""}>
           <span class="d-name">${isToday ? "📍 " : ""}${SCHEDULE_DAY_NAME(iso)}</span>
           <span class="d-date">${fmtDateShort(d)} ${badge}</span>
         </div>`;
+      const cardCls = "card" + (isToday ? " today" : "");
       if (dayItems.length === 0) {
-        html += `<div class="card"><div class="empty" style="padding:14px;">Немає занять</div></div>`;
+        html += `<div class="${cardCls}"><div class="empty" style="padding:14px;">Немає занять</div></div>`;
       } else {
-        html += `<div class="card">${dayItems.map(i => lessonRow(i, true)).join("")}</div>`;
+        html += `<div class="${cardCls}">${dayItems.map(i => lessonRow(i, true)).join("")}</div>`;
       }
     }
     content.innerHTML = html;
@@ -463,11 +528,12 @@ function SCHEDULE_DAY_NAME(iso) {
   return NAMES[idx] || "";
 }
 
-// ===== Дзвінок на початок/кінець пар =====
+// ===== Дзвінок на початок/кінець пар (автоматично) =====
 let bellOn = false;
 let audioCtx = null;
-let lastRung = "";
 let wakeLock = null;
+let lastTick = Date.now();
+const rungEvents = new Set(); // позначки часу, на які вже дзвонили
 
 function playStrike(when, vol, out) {
   // "дзвінок" = кілька затухаючих гармонік
@@ -489,6 +555,7 @@ function playStrike(when, vol, out) {
 
 function ringBell(times) {
   if (!audioCtx) return;
+  if (audioCtx.state === "suspended") audioCtx.resume();
   const t0 = audioCtx.currentTime + 0.05;
   // підсилювач + компресор: гучніше, але без хрипіння/спотворень
   const master = audioCtx.createGain();
@@ -526,6 +593,7 @@ function toggleBell() {
     audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
     if (audioCtx.state === "suspended") audioCtx.resume();
     ringBell(1); // пробний дзвінок
+    lastTick = Date.now();
     requestWakeLock();
   } else if (wakeLock) {
     try { wakeLock.release(); } catch (e) {}
@@ -534,23 +602,56 @@ function toggleBell() {
   updateBellBtn();
 }
 
-function checkBell() {
-  if (!bellOn || !SCHEDULE) return;
-  const now = new Date();
-  const hh = String(now.getHours()).padStart(2, "0");
-  const mm = String(now.getMinutes()).padStart(2, "0");
-  const hm = `${hh}:${mm}`;
-  const key = `${toISO(now)} ${hm}`;
-  if (key === lastRung) return;
+// Усі моменти дзвінка на вказану дату: час -> кількість ударів
+// (початок пари = 1 удар, кінець = 2). Однакові моменти різних груп зливаються в один.
+function bellEventsFor(date) {
+  const events = new Map();
+  const iso = toISO(date);
+  const y = date.getFullYear(), mo = date.getMonth(), d = date.getDate();
 
-  const todays = SCHEDULE.lessons.filter(l => l.date === toISO(now));
-  for (const l of todays) {
+  function add(hm, strikes) {
+    const m = /^(\d{1,2}):(\d{2})$/.exec(hm);
+    if (!m) return;
+    const ts = new Date(y, mo, d, Number(m[1]), Number(m[2]), 0).getTime();
+    if (!events.has(ts)) events.set(ts, strikes);
+  }
+
+  for (const l of SCHEDULE.lessons) {
+    if (l.date !== iso) continue;
     const parts = (l.time || "").split("–");
     if (parts.length !== 2) continue;
-    const start = parts[0].trim().padStart(5, "0");
-    const end = parts[1].trim().padStart(5, "0");
-    if (hm === start) { lastRung = key; ringBell(1); return; }   // початок — 1 удар
-    if (hm === end)   { lastRung = key; ringBell(2); return; }   // кінець — 2 удари
+    add(parts[0].trim(), 1);
+    add(parts[1].trim(), 2);
+  }
+  return events;
+}
+
+function checkBell() {
+  const nowMs = Date.now();
+  const from = lastTick;
+  lastTick = nowMs;
+
+  // Якщо за цей час змінилась доба — оновити "Сьогодні" в шапці
+  if (SCHEDULE && toISO(new Date(nowMs)) !== shownTodayISO) {
+    updateTodayLine();
+    if (mode === "week" || mode === "day") render();
+  }
+
+  if (!bellOn || !SCHEDULE) return;
+
+  // Браузер міг "присипляти" вкладку: звук відновлюємо, а пропущені
+  // моменти шукаємо у вікні між попередньою перевіркою і зараз
+  // (але не старіше 60 с, щоб не дзвонити "із запізненням").
+  if (audioCtx && audioCtx.state !== "running") {
+    audioCtx.resume().catch(() => {});
+  }
+
+  const windowStart = Math.max(from, nowMs - 60000);
+  for (const [ts, strikes] of bellEventsFor(new Date(nowMs))) {
+    if (ts > windowStart && ts <= nowMs && !rungEvents.has(ts)) {
+      rungEvents.add(ts);
+      ringBell(strikes);
+    }
   }
 }
 
@@ -569,9 +670,13 @@ document.getElementById("themeBtn").addEventListener("click", () => {
   updateThemeBtn();
 });
 updateThemeBtn();
+
 setInterval(checkBell, 1000);
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && bellOn) requestWakeLock();
+  if (document.visibilityState === "visible") {
+    if (bellOn) requestWakeLock();
+    checkBell();
+  }
 });
 load().catch(err => {
   document.getElementById("content").innerHTML =
