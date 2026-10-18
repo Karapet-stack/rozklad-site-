@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T14:44:36",
+  "generated_at": "2026-10-18T15:23:40",
   "today": "2026-10-18",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
@@ -2709,6 +2709,54 @@
       "time": "13:10–13:55",
       "group": "Зв-11",
       "subject": "Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-20",
+      "weekday_index": 1,
+      "weekday": "Вівторок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 7,
+      "time": "14:05–14:50",
+      "group": "М-1",
+      "subject": "Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-20",
+      "weekday_index": 1,
+      "weekday": "Вівторок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 8,
+      "time": "14:55–15:40",
+      "group": "М-1",
+      "subject": "Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-21",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 3,
+      "time": "10:15–11:00",
+      "group": "М-1",
+      "subject": "Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-21",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 4,
+      "time": "11:05–11:50",
+      "group": "М-1",
+      "subject": "Інформаціні технології",
       "conducted": false
     },
     {
