@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T12:09:55",
-  "today": "2026-10-16",
+  "generated_at": "2026-10-18T14:44:36",
+  "today": "2026-10-18",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -2637,30 +2637,6 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-19",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 7,
-      "time": "14:05–14:50",
-      "group": "МБК-1",
-      "subject": "Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-19",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 8,
-      "time": "14:55–15:40",
-      "group": "МБК-1",
-      "subject": "Інженерна та компютерна графіка",
       "conducted": false
     },
     {
