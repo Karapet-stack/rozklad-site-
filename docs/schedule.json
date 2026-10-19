@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T11:02:51",
+  "generated_at": "2026-10-19T11:05:01",
   "today": "2026-10-19",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
@@ -2577,7 +2577,7 @@
       "time": "08:30–09:15",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-19",
@@ -2589,7 +2589,7 @@
       "time": "09:20–10:05",
       "group": "М-1",
       "subject": "Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-19",
@@ -2601,7 +2601,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-19",
@@ -2613,7 +2613,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-19",
@@ -2625,7 +2625,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-19",
@@ -2637,7 +2637,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-20",
