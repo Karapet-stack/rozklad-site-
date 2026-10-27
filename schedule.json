@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T10:01:20",
-  "today": "2026-10-26",
+  "generated_at": "2026-10-27T17:09:44",
+  "today": "2026-10-27",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -32,7 +32,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -44,7 +44,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -56,7 +56,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -68,7 +68,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -104,7 +104,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -116,7 +116,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -128,7 +128,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -140,7 +140,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -152,7 +152,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -164,7 +164,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -176,7 +176,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -188,7 +188,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -200,7 +200,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -212,7 +212,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -224,7 +224,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -236,7 +236,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -248,7 +248,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -260,7 +260,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -296,7 +296,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -308,7 +308,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -368,7 +368,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -380,7 +380,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -392,7 +392,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -404,7 +404,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -440,7 +440,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -452,7 +452,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -512,7 +512,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -524,7 +524,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -560,7 +560,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -572,7 +572,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -608,7 +608,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -620,7 +620,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -632,7 +632,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -644,7 +644,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -656,7 +656,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -668,7 +668,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -680,7 +680,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -692,7 +692,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -704,7 +704,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -716,7 +716,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -776,7 +776,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -788,7 +788,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -848,7 +848,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -860,7 +860,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -896,7 +896,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -908,7 +908,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -1016,7 +1016,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1028,7 +1028,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1040,7 +1040,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1052,7 +1052,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1064,7 +1064,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1076,7 +1076,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1088,7 +1088,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1100,7 +1100,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1112,7 +1112,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -1124,7 +1124,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -1160,7 +1160,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1172,7 +1172,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1184,7 +1184,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -1196,7 +1196,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -1208,7 +1208,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1220,7 +1220,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1256,7 +1256,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1268,7 +1268,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1304,7 +1304,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1316,7 +1316,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1328,7 +1328,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -1340,7 +1340,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -1352,7 +1352,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1364,7 +1364,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1376,7 +1376,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1388,7 +1388,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1400,7 +1400,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1412,7 +1412,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1424,7 +1424,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1436,7 +1436,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1448,7 +1448,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -1460,7 +1460,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -1496,7 +1496,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1508,7 +1508,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1520,7 +1520,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1532,7 +1532,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1640,7 +1640,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1652,7 +1652,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1664,7 +1664,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1676,7 +1676,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1688,7 +1688,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1700,7 +1700,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1712,7 +1712,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1724,7 +1724,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1760,7 +1760,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1772,7 +1772,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1784,7 +1784,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1796,7 +1796,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1808,7 +1808,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1820,7 +1820,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -1856,7 +1856,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1868,7 +1868,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1880,7 +1880,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1892,7 +1892,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1904,7 +1904,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1916,7 +1916,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Т-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1952,7 +1952,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -1964,7 +1964,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2024,7 +2024,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2036,7 +2036,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2048,7 +2048,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2060,7 +2060,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2096,7 +2096,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2108,7 +2108,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2120,7 +2120,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2132,7 +2132,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2144,7 +2144,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -2156,7 +2156,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Засоби комп'ютерних іформаціних систем",
+      "subject": "🖥️ Засоби комп'ютерних іформаціних систем",
       "conducted": true
     },
     {
@@ -2192,7 +2192,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2204,7 +2204,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2240,7 +2240,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2252,7 +2252,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2312,7 +2312,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2324,7 +2324,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2336,7 +2336,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2348,7 +2348,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2384,7 +2384,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2396,7 +2396,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2408,7 +2408,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2420,7 +2420,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Е-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2432,7 +2432,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2444,7 +2444,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2480,7 +2480,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2492,7 +2492,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2504,7 +2504,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -2516,7 +2516,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Компютерні мережі",
+      "subject": "🌍 Компютерні мережі",
       "conducted": true
     },
     {
@@ -2552,7 +2552,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2564,7 +2564,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2600,7 +2600,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2612,7 +2612,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2624,7 +2624,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2636,7 +2636,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2696,7 +2696,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2708,7 +2708,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2720,7 +2720,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2732,7 +2732,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2744,7 +2744,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2756,7 +2756,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2768,7 +2768,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2780,7 +2780,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2792,7 +2792,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2804,7 +2804,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2816,7 +2816,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2828,7 +2828,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "М-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2840,7 +2840,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2852,7 +2852,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2864,7 +2864,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2876,7 +2876,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2888,7 +2888,7 @@
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -2900,7 +2900,7 @@
       "lesson": 8,
       "time": "14:55–15:40",
       "group": "Оп-21",
-      "subject": "Операційні системи",
+      "subject": "💡 Операційні системи",
       "conducted": true
     },
     {
@@ -2960,7 +2960,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -2972,7 +2972,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -3008,7 +3008,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -3020,7 +3020,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -3032,7 +3032,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -3044,7 +3044,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": true
     },
     {
@@ -3096,6 +3096,54 @@
       "conducted": false
     },
     {
+      "date": "2026-10-28",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 3,
+      "time": "10:15–11:00",
+      "group": "Зв-31",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-28",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 4,
+      "time": "11:05–11:50",
+      "group": "Зв-31",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-28",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 7,
+      "time": "14:05–14:50",
+      "group": "Е-31",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-10-28",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 8,
+      "time": "14:55–15:40",
+      "group": "Е-31",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
       "date": "2026-10-29",
       "weekday_index": 3,
       "weekday": "Четвер",
@@ -3104,7 +3152,7 @@
       "lesson": 1,
       "time": "08:30–09:15",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3116,7 +3164,7 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "Е-2",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3128,7 +3176,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3140,7 +3188,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3176,7 +3224,7 @@
       "lesson": 5,
       "time": "12:00–12:45",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3188,7 +3236,7 @@
       "lesson": 6,
       "time": "12:50–13:35",
       "group": "Е-1",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3200,7 +3248,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3212,7 +3260,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3272,7 +3320,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3284,7 +3332,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3333,30 +3381,6 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-05",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-05",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -3416,7 +3440,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3428,7 +3452,31 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-09",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "Е-1",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-09",
+      "weekday_index": 0,
+      "weekday": "Понеділок",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "Е-1",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3480,27 +3528,27 @@
       "conducted": false
     },
     {
-      "date": "2026-11-12",
-      "weekday_index": 3,
-      "weekday": "Четвер",
+      "date": "2026-11-11",
+      "weekday_index": 2,
+      "weekday": "Середа",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "К-11",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
-      "date": "2026-11-12",
-      "weekday_index": 3,
-      "weekday": "Четвер",
+      "date": "2026-11-11",
+      "weekday_index": 2,
+      "weekday": "Середа",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "К-11",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3512,7 +3560,7 @@
       "lesson": 5,
       "time": "12:20–13:05",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3524,7 +3572,7 @@
       "lesson": 6,
       "time": "13:10–13:55",
       "group": "Зв-31",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3608,7 +3656,7 @@
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3620,7 +3668,7 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-11",
-      "subject": "Креслення",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3669,30 +3717,6 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-19",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Е-2",
-      "subject": "Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-19",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Е-2",
-      "subject": "Креслення",
       "conducted": false
     },
     {
@@ -3789,6 +3813,30 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-25",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "К-11",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-25",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "К-11",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -3924,18 +3972,6 @@
       "conducted": false
     },
     {
-      "date": "2026-12-03",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "М-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
       "date": "2026-12-04",
       "weekday_index": 4,
       "weekday": "П’ятниця",
@@ -4005,6 +4041,30 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
+      "conducted": false
+    },
+    {
+      "date": "2026-12-09",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "К-11",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-12-09",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "numerator",
+      "week_type_label": "Чисельник",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "К-11",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
@@ -4092,18 +4152,6 @@
       "conducted": false
     },
     {
-      "date": "2026-12-15",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
       "date": "2026-12-16",
       "weekday_index": 2,
       "weekday": "Середа",
@@ -4124,42 +4172,6 @@
       "lesson": 2,
       "time": "09:20–10:05",
       "group": "О-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-17",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 3,
-      "time": "10:15–11:00",
-      "group": "М-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-17",
-      "weekday_index": 3,
-      "weekday": "Четвер",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 4,
-      "time": "11:05–11:50",
-      "group": "М-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-29",
-      "weekday_index": 1,
-      "weekday": "Вівторок",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 6,
-      "time": "13:10–13:55",
-      "group": "Т-11",
       "subject": "💻 Інформаціні технології",
       "conducted": false
     }
