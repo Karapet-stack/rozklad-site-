@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T19:16:02",
-  "today": "2026-10-28",
+  "generated_at": "2026-10-30T13:07:51",
+  "today": "2026-10-30",
   "today_week_type": "numerator",
   "today_week_label": "Чисельник",
   "groups": [
@@ -3153,7 +3153,7 @@
       "time": "08:30–09:15",
       "group": "Е-2",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-29",
@@ -3165,7 +3165,7 @@
       "time": "09:20–10:05",
       "group": "Е-2",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-29",
@@ -3177,7 +3177,7 @@
       "time": "12:20–13:05",
       "group": "Зв-31",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-29",
@@ -3189,7 +3189,7 @@
       "time": "13:10–13:55",
       "group": "Зв-31",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-30",
@@ -3201,7 +3201,7 @@
       "time": "08:30–09:15",
       "group": "МБК-1",
       "subject": "🤖 Інженерна та компютерна графіка",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-10-30",
@@ -3213,31 +3213,7 @@
       "time": "09:20–10:05",
       "group": "МБК-1",
       "subject": "🤖 Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-30",
-      "weekday_index": 4,
-      "weekday": "П’ятниця",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 5,
-      "time": "12:00–12:45",
-      "group": "Е-1",
-      "subject": "📐 Креслення",
-      "conducted": false
-    },
-    {
-      "date": "2026-10-30",
-      "weekday_index": 4,
-      "weekday": "П’ятниця",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 6,
-      "time": "12:50–13:35",
-      "group": "Е-1",
-      "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-02",
@@ -3271,8 +3247,8 @@
       "week_type_label": "Знаменник",
       "lesson": 7,
       "time": "14:05–14:50",
-      "group": "МБК-1",
-      "subject": "🤖 Інженерна та компютерна графіка",
+      "group": "О-1",
+      "subject": "💻 Інформаціні технології",
       "conducted": false
     },
     {
@@ -3283,8 +3259,8 @@
       "week_type_label": "Знаменник",
       "lesson": 8,
       "time": "14:55–15:40",
-      "group": "МБК-1",
-      "subject": "🤖 Інженерна та компютерна графіка",
+      "group": "О-1",
+      "subject": "💻 Інформаціні технології",
       "conducted": false
     },
     {
@@ -3381,6 +3357,30 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-04",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 3,
+      "time": "10:15–11:00",
+      "group": "Е-1",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-04",
+      "weekday_index": 2,
+      "weekday": "Середа",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 4,
+      "time": "11:05–11:50",
+      "group": "Е-1",
+      "subject": "📐 Креслення",
       "conducted": false
     },
     {
