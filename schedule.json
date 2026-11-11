@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-08T14:54:25",
-  "today": "2026-11-08",
-  "today_week_type": "denominator",
-  "today_week_label": "Знаменник",
+  "generated_at": "2026-11-11T09:57:09",
+  "today": "2026-11-11",
+  "today_week_type": "numerator",
+  "today_week_label": "Чисельник",
   "groups": [
     "Е-1",
     "Е-11",
@@ -3489,7 +3489,7 @@
       "time": "08:30–09:15",
       "group": "Т-11",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3501,7 +3501,7 @@
       "time": "09:20–10:05",
       "group": "Т-11",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3513,7 +3513,7 @@
       "time": "10:15–11:00",
       "group": "Зв-31",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3525,7 +3525,7 @@
       "time": "11:05–11:50",
       "group": "Зв-31",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3537,7 +3537,7 @@
       "time": "12:20–13:05",
       "group": "Е-1",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3549,7 +3549,7 @@
       "time": "13:10–13:55",
       "group": "Е-1",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3561,7 +3561,7 @@
       "time": "14:05–14:50",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-09",
@@ -3573,7 +3573,7 @@
       "time": "14:55–15:40",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3585,7 +3585,7 @@
       "time": "08:30–09:15",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3597,7 +3597,7 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3609,7 +3609,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3621,7 +3621,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3633,7 +3633,7 @@
       "time": "12:20–13:05",
       "group": "К-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-11",
@@ -3645,7 +3645,7 @@
       "time": "13:10–13:55",
       "group": "К-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-13",
