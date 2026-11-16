@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T09:13:04",
+  "generated_at": "2026-11-16T15:01:02",
   "today": "2026-11-16",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
@@ -3860,6 +3860,30 @@
       "lesson": 4,
       "time": "11:05–11:50",
       "group": "Зв-11",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-17",
+      "weekday_index": 1,
+      "weekday": "Вівторок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 5,
+      "time": "12:20–13:05",
+      "group": "К-11",
+      "subject": "📐 Креслення",
+      "conducted": false
+    },
+    {
+      "date": "2026-11-17",
+      "weekday_index": 1,
+      "weekday": "Вівторок",
+      "week_type": "denominator",
+      "week_type_label": "Знаменник",
+      "lesson": 6,
+      "time": "13:10–13:55",
+      "group": "К-11",
       "subject": "📐 Креслення",
       "conducted": false
     },
