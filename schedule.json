@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T15:01:02",
-  "today": "2026-11-16",
+  "generated_at": "2026-11-18T08:43:02",
+  "today": "2026-11-18",
   "today_week_type": "denominator",
   "today_week_label": "Знаменник",
   "groups": [
@@ -3825,7 +3825,7 @@
       "time": "08:30–09:15",
       "group": "Р-11",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-17",
@@ -3837,7 +3837,7 @@
       "time": "09:20–10:05",
       "group": "Р-11",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-17",
@@ -3849,7 +3849,7 @@
       "time": "10:15–11:00",
       "group": "Зв-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-17",
@@ -3861,7 +3861,7 @@
       "time": "11:05–11:50",
       "group": "Зв-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-17",
@@ -3873,7 +3873,7 @@
       "time": "12:20–13:05",
       "group": "К-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-17",
@@ -3885,7 +3885,7 @@
       "time": "13:10–13:55",
       "group": "К-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-18",
@@ -3897,7 +3897,7 @@
       "time": "08:30–09:15",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-18",
@@ -3909,7 +3909,7 @@
       "time": "09:20–10:05",
       "group": "О-1",
       "subject": "💻 Інформаціні технології",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-18",
@@ -3921,7 +3921,7 @@
       "time": "10:15–11:00",
       "group": "Е-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-18",
@@ -3933,7 +3933,7 @@
       "time": "11:05–11:50",
       "group": "Е-11",
       "subject": "📐 Креслення",
-      "conducted": false
+      "conducted": true
     },
     {
       "date": "2026-11-19",
@@ -4013,18 +4013,6 @@
       "weekday": "Понеділок",
       "week_type": "numerator",
       "week_type_label": "Чисельник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "Т-11",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-11-23",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
       "lesson": 7,
       "time": "14:05–14:50",
       "group": "МБК-1",
@@ -4193,30 +4181,6 @@
       "weekday": "Середа",
       "week_type": "denominator",
       "week_type_label": "Знаменник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "О-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-02",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
-      "lesson": 2,
-      "time": "09:20–10:05",
-      "group": "О-1",
-      "subject": "💻 Інформаціні технології",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-02",
-      "weekday_index": 2,
-      "weekday": "Середа",
-      "week_type": "denominator",
-      "week_type_label": "Знаменник",
       "lesson": 3,
       "time": "10:15–11:00",
       "group": "Е-11",
@@ -4281,18 +4245,6 @@
       "time": "09:20–10:05",
       "group": "МБК-1",
       "subject": "🤖 Інженерна та компютерна графіка",
-      "conducted": false
-    },
-    {
-      "date": "2026-12-07",
-      "weekday_index": 0,
-      "weekday": "Понеділок",
-      "week_type": "numerator",
-      "week_type_label": "Чисельник",
-      "lesson": 1,
-      "time": "08:30–09:15",
-      "group": "Т-11",
-      "subject": "💻 Інформаціні технології",
       "conducted": false
     },
     {
